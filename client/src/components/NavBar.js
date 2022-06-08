@@ -29,6 +29,7 @@ function NavBar({ user, setUser }) {
           setIsShow(false)}}>Task Galaxy</Link>
       </Logo>
       <Nav>
+        
         {isShow ? <Button onClick={() => setIsShow(!isShow)} as={Link} to='/create-project' >New Project</Button> : null}
         {isShow ? <Button as={Link} to='/create' onClick={() => setIsShow(!isShow)} >New Task</Button> : null}
         {!isMinus ? <Button onClick={() => {
@@ -38,6 +39,8 @@ function NavBar({ user, setUser }) {
             <FaGhost icon="flipper" size="1.5em" className="flipper" color="goldenrod"/>
             
             </Button> : null}
+
+
         {isMinus ? <Button as={Link} to='/delete-project' onClick={() => setIsMinus(!isMinus)}>Delete Project</Button> : null}
         {isMinus ? <Button as={Link} to='/delete-task' onClick={() => setIsMinus(!isMinus)}>Delete Task</Button> : null}
         {!isShow ? <Button onClick={() => {
