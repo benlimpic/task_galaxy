@@ -37,7 +37,7 @@ function GalaxyBuild() {
 
 
     return (
-        <div className="galaxy">
+        <div>
         <div id="navbar">
         <a id="toggle-data" href="#data"><i className="icon-data"></i></a>
         <a id="toggle-controls" href="#controls"><i className="icon-controls"></i></a>
@@ -59,11 +59,13 @@ function GalaxyBuild() {
         <label className="set-view" onClick={(e) => body.toggleClass("view-3D view-2D")}>
             <input type="checkbox" />
         </label>
-        <label className="set-zoom" onClick={(e) => body.toggleClass("zoom-large zoom-close")}>
+        {/* <label className="set-zoom" onClick={(e) => body.toggleClass("zoom-large zoom-close")
+        }>
             <input type="checkbox" />
-        </label> 
+        </label>  */}
         </div>
 
+        <div className="galaxy">
         <div id="universe" className="scale-stretched">
         <div id="galaxy">
             <div id="solar-system" className="earth">
@@ -160,6 +162,7 @@ function GalaxyBuild() {
                 </dl>
             </div>
             </div>
+        </div>
         </div>
         </div>
         </div>
