@@ -9,7 +9,7 @@ function GalaxyBuild() {
         solarsys = $("#solar-system");
 
     var init = function() {
-        body.removeClass('view-2D opening').addClass("view-3D").delay(2000).queue(function() {
+        body.removeClass('view-3D opening').addClass("view-2D").delay(2000).queue(function() {
         $(this).removeClass('hide-UI').addClass("set-speed");
         $(this).dequeue();
         });
@@ -55,10 +55,10 @@ function GalaxyBuild() {
         <a className="neptune" title="neptune" href="#neptunespeed">Neptune</a>
         </div> */}
 
-        <div id="controls">
+        {/* <div id="controls">
         <label className="set-view" onClick={(e) => body.toggleClass("view-3D view-2D")}>
             <input type="checkbox" />
-        </label>
+        </label> */}
         {/* <label className="set-zoom" onClick={(e) => body.toggleClass("zoom-large zoom-close")
         }>
             <input type="checkbox" />
@@ -161,7 +161,6 @@ function GalaxyBuild() {
                 </dl>
             </div>
             </div>
-        </div>
         </div>
         </div>
         </div>

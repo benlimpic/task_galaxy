@@ -847,7 +847,7 @@ h1 span, #navbar h1 a {
 
 
 #navbar, #controls, #data {
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0); }
 
 #navbar {
   z-index: 99;

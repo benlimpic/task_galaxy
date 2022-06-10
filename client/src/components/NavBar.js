@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles";
 import '../App.css';
-import { FaGhost, FaPlus } from "react-icons/fa";
-
-
-
 
 function NavBar({ user, setUser }) {
   function handleLogoutClick() {
@@ -30,7 +26,7 @@ function NavBar({ user, setUser }) {
       </Logo>
       <Nav>
         
-        {isShow ? <Button onClick={() => setIsShow(!isShow)} as={Link} to='/create-project' >New Project</Button> : null}
+        {/* {isShow ? <Button onClick={() => setIsShow(!isShow)} as={Link} to='/create-project' >New Project</Button> : null}
         {isShow ? <Button as={Link} to='/create' onClick={() => setIsShow(!isShow)} >New Task</Button> : null}
         {!isMinus ? <Button onClick={() => {
           setIsMinus(!isMinus)
@@ -49,7 +45,7 @@ function NavBar({ user, setUser }) {
 
             <FaPlus icon="flipper" size="1.5em" className="flipper" color="goldenrod"/>
             
-            </Button> : null}
+            </Button> : null} */}
         <Button variant="fill" onClick={handleLogoutClick}>
           Logout
         </Button>
@@ -58,9 +54,6 @@ function NavBar({ user, setUser }) {
     </div>
   );
 }
-
-
-
 
 const Wrapper = styled.header`
   display: flex;
