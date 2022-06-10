@@ -5,7 +5,7 @@ import $ from 'jquery';
 function GalaxyBuild() {
 
     var body = $("body"),
-        // universe = $("#universe"),
+        universe = $("#universe"),
         solarsys = $("#solar-system");
 
     var init = function() {
@@ -16,12 +16,12 @@ function GalaxyBuild() {
     };
 
     $("#toggle-data").click(function(e) {
-        body.toggleClass("data-open data-close");
+        body.toggleClass("data-close");
         e.preventDefault();
     });
 
     $("#toggle-controls").click(function(e) {
-        body.toggleClass("controls-open controls-close");
+        body.toggleClass("controls-close");
         e.preventDefault();
     });
 
@@ -43,7 +43,7 @@ function GalaxyBuild() {
         <a id="toggle-controls" href="#controls"><i className="icon-controls"></i></a>
         </div>
         <div >
-        <div id="data">
+        {/* <div id="data">
         <a className="sun" title="sun" href="#sunspeed">Sun</a>
         <a className="mercury" title="mercury" href="#mercuryspeed">Mercury</a>
         <a className="venus" title="venus" href="#venusspeed">Venus</a>
@@ -53,7 +53,7 @@ function GalaxyBuild() {
         <a className="saturn" title="saturn" href="#saturnspeed">Saturn</a>
         <a className="uranus" title="uranus" href="#uranusspeed">Uranus</a>
         <a className="neptune" title="neptune" href="#neptunespeed">Neptune</a>
-        </div>
+        </div> */}
 
         <div id="controls">
         <label className="set-view" onClick={(e) => body.toggleClass("view-3D view-2D")}>
@@ -64,7 +64,6 @@ function GalaxyBuild() {
             <input type="checkbox" />
         </label>  */}
         </div>
-
         <div className="galaxy">
         <div id="universe" className="scale-stretched">
         <div id="galaxy">
@@ -167,10 +166,7 @@ function GalaxyBuild() {
         </div>
         </div>
         </div>
-        
     );
-
 }
-
 
 export default GalaxyBuild;

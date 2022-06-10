@@ -52,7 +52,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  /*perspective: 4000;*/ }
+  perspective: 4000; }
 
 #solar-system {
   position: absolute;
@@ -137,9 +137,10 @@ body {
   margin-left: -1.1em;
   border: 0.07em solid rgba(160, 147, 130, 0.5);
   box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; } 
 
 /* --------------------------------------------------------------------------- planets index */
+
 #mercury {
   z-index: 10; }
 
@@ -171,6 +172,7 @@ body {
   z-index: 1; }
 
 /* --------------------------------------------------------------------------- animations */
+
 @keyframes orbit {
   0% {
     transform: rotateZ(0deg); }
@@ -192,19 +194,8 @@ body {
   100% {
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
 
-/* --------------------------------------------------------------------------- opening */
-.view-3D .opening #sun,
-.view-3D .opening .orbit,
-.view-3D .opening .pos,
-.view-3D .opening .planet,
-.view-3D .opening .satelite,
-.view-3D .opening .ring {
-  transition-duration: 4s; }
-
-#universe.opening #sun {
-  box-shadow: 0 0 0 rgba(255, 160, 60, 0); }
-
 /* --------------------------------------------------------------------------- 2D view */
+
 .view-2D.zoom-large #sun {
   transform-style: flat; }
 
@@ -220,6 +211,7 @@ body {
   transform: rotateX(90deg); }
 
 /* --------------------------------------------------------------------------- 3D view */
+
 .view-3D.zoom-large #sun {
   transform-style: preserve-3d; }
 
@@ -239,80 +231,9 @@ body {
 .view-3D .moon {
   transform: rotateX(0deg); }
 
-/* --------------------------------------------------------------------------- large zoom */
-.zoom-large #solar-system {
-  width: 100%; }
-
-.zoom-large.view-2D .scale-stretched #solar-system {
-  font-size: 26%; }
-
-.zoom-large.view-3D .scale-stretched #solar-system {
-  font-size: 62%; }
-
-.zoom-large.view-2D .scale-d #solar-system {
-  font-size: 22%; }
-
-.zoom-large.view-3D .scale-d #solar-system {
-  font-size: 48%; }
-
-.zoom-large.view-2D .scale-s #solar-system {
-  font-size: 7%; }
-
-.zoom-large.view-3D .scale-s #solar-system {
-  font-size: 14%; }
-
-/* --------------------------------------------------------------------------- close zoom */
-.zoom-close #solar-system {
-  width: 200%;
-  font-size: 100%; }
-
-.zoom-close .scale-stretched #solar-system {
-  margin-left: -100%; }
-
-.zoom-close .scale-d #solar-system {
-  margin-left: -106%; }
-
-.zoom-close.view-2D .scale-d #solar-system {
-  font-size: 84%; }
-
-.zoom-close.view-3D .scale-d #solar-system {
-  font-size: 84%; }
-
-.zoom-close .scale-s #solar-system {
-  margin-left: -145%; }
-
-.zoom-close.view-2D .scale-s #solar-system {
-  font-size: 40%; }
-
-.zoom-close.view-3D .scale-s #solar-system {
-  font-size: 40%; }
-
-.zoom-close .orbit,
-.zoom-close .pos,
-.zoom-close .planet,
-.zoom-close .satelite,
-.zoom-close .ring {
-  animation-play-state: paused!important;
-  animation-duration: 0s!important;
-  animation: none!important; }
-
-.zoom-close.view-2D .planet,
-.zoom-close.view-2D .moon {
-  transform: rotateX(0deg); }
-
-.zoom-close.view-3D .planet {
-  transform: rotateX(-90deg); }
-
-.zoom-close.view-3D .moon {
-  transform: rotateX(90deg); }
-
-.zoom-close .pos {
-  left: 100%!important;
-  top: 50%!important; }
-
-/* --------------------------------------------------------------------------- data */
 /* --------------------------------------------------------------------------- speed */
 /* sideral years */
+
 #mercury .pos,
 #mercury .planet,
 #mercury.orbit {
@@ -358,8 +279,8 @@ body {
 #neptune.orbit {
   animation-duration: 1977.49584s; }
 
-/* --------------------------------------------------------------------------- planets sizes */
-/* --------------------------------------------------------------------------- stretched sizes */
+/* #--------------------------------------------------------------------------- stretched sizes */
+
 .scale-stretched #sun {
   font-size: 24em; }
 
@@ -390,75 +311,8 @@ body {
 .scale-stretched #neptune .planet {
   font-size: 4.9em; }
 
-/* --------------------------------------------------------------------------- scaled sizes */
+/* #--------------------------------------------------------------------------- stretched orbits */
 
-/* (planets radius * 2) * ratio
-
-$distanceScaleRatio:   0.000075em; */
-
-/* --------------------------------------------------------------------------- planets distance scale sizes */
-.scale-d #sun {
-  font-size: 41.73048em; }
-
-.scale-d #mercury .planet {
-  font-size: 0.14634em; }
-
-.scale-d #venus .planet {
-  font-size: 0.36306em; }
-
-.scale-d #earth .planet {
-  font-size: 0.38226em; }
-
-.scale-d #earth .moon {
-  font-size: 0.08226em; }
-
-.scale-d #mars .planet {
-  font-size: 0.20334em; }
-
-.scale-d #jupiter .planet {
-  font-size: 4.19466em; }
-
-.scale-d #saturn .planet {
-  font-size: 3.49392em; }
-
-.scale-d #uranus .planet {
-  font-size: 1.52172em; }
-
-.scale-d #neptune .planet {
-  font-size: 1.47732em; }
-
-/* --------------------------------------------------------------------------- planet size scale sizes */
-.scale-s #sun {
-  font-size: 417.3048em; }
-
-.scale-s #mercury .planet {
-  font-size: 1.4634em; }
-
-.scale-s #venus .planet {
-  font-size: 3.6306em; }
-
-.scale-s #earth .planet {
-  font-size: 3.8226em; }
-
-.scale-s #earth .moon {
-  font-size: 0.8226em; }
-
-.scale-s #mars .planet {
-  font-size: 2.0334em; }
-
-.scale-s #jupiter .planet {
-  font-size: 41.9466em; }
-
-.scale-s #saturn .planet {
-  font-size: 34.9392em; }
-
-.scale-s #uranus .planet {
-  font-size: 15.2172em; }
-
-.scale-s #neptune .planet {
-  font-size: 14.7732em; }
-
-/* --------------------------------------------------------------------------- stretched orbits */
 .scale-stretched #mercury.orbit {
   width: 32em;
   height: 32em;
@@ -513,121 +367,8 @@ $distanceScaleRatio:   0.000075em; */
   margin-top: -105em;
   margin-left: -105em; }
 
-/* --------------------------------------------------------------------------- scaled orbits */
-/* --------------------------------------------------------------------------- distance scale orbits */
-.scale-d #mercury.orbit {
-  width: 44.74176em;
-  height: 44.74176em;
-  margin-top: -22.37088em;
-  margin-left: -22.37088em; }
+/* !--------------------------------------------------------------------------- speed */
 
-.scale-d #venus.orbit {
-  width: 47.35737em;
-  height: 47.35737em;
-  margin-top: -23.67869em;
-  margin-left: -23.67869em; }
-
-.scale-d #earth.orbit {
-  width: 49.50959em;
-  height: 49.50959em;
-  margin-top: -24.75479em;
-  margin-left: -24.75479em; }
-
-.scale-d #mars.orbit {
-  width: 53.58356em;
-  height: 53.58356em;
-  margin-top: -26.79178em;
-  margin-left: -26.79178em; }
-
-.scale-d #jupiter.orbit {
-  width: 82.2042em;
-  height: 82.2042em;
-  margin-top: -41.1021em;
-  margin-left: -41.1021em; }
-
-.scale-d #saturn.orbit {
-  width: 115.91713em;
-  height: 115.91713em;
-  margin-top: -57.95857em;
-  margin-left: -57.95857em; }
-
-.scale-d #uranus.orbit {
-  width: 191.00471em;
-  height: 191.00471em;
-  margin-top: -95.50235em;
-  margin-left: -95.50235em; }
-
-.scale-d #neptune.orbit {
-  width: 275.64709em;
-  height: 275.64709em;
-  margin-top: -137.82355em;
-  margin-left: -137.82355em; }
-
-/* Moon */
-.scale-d #earth .orbit {
-  width: 1em;
-  height: 1em;
-  margin-top: -0.5em;
-  margin-left: -0.5em; }
-
-/* --------------------------------------------------------------------------- size scale orbits */
-.scale-s #mercury.orbit {
-  width: 441.3048em;
-  height: 441.3048em;
-  margin-top: -220.6524em;
-  margin-left: -220.6524em; }
-
-.scale-s #venus.orbit {
-  width: 457.3048em;
-  height: 457.3048em;
-  margin-top: -228.6524em;
-  margin-left: -228.6524em; }
-
-.scale-s #earth.orbit {
-  width: 473.3048em;
-  height: 473.3048em;
-  margin-top: -236.6524em;
-  margin-left: -236.6524em; }
-
-.scale-s #mars.orbit {
-  width: 489.3048em;
-  height: 489.3048em;
-  margin-top: -244.6524em;
-  margin-left: -244.6524em; }
-
-.scale-s #jupiter.orbit {
-  width: 561.3048em;
-  height: 561.3048em;
-  margin-top: -280.6524em;
-  margin-left: -280.6524em; }
-
-.scale-s #saturn.orbit {
-  width: 705.3048em;
-  height: 705.3048em;
-  margin-top: -352.6524em;
-  margin-left: -352.6524em; }
-
-.scale-s #uranus.orbit {
-  width: 817.3048em;
-  height: 817.3048em;
-  margin-top: -408.6524em;
-  margin-left: -408.6524em; }
-
-.scale-s #neptune.orbit {
-  width: 881.3048em;
-  height: 881.3048em;
-  margin-top: -440.6524em;
-  margin-left: -440.6524em; }
-
-/* Moon */
-.scale-s #earth .orbit {
-  width: 1em;
-  height: 1em;
-  margin-top: -0.5em;
-  margin-left: -0.5em; }
-
-/* --------------------------------------------------------------------------- text infos data */
-/* --------------------------------------------------------------------------- speed */
 .set-speed dl.infos dd span:after {
   content: 'Orbit Velocity'; }
 
@@ -658,73 +399,10 @@ $distanceScaleRatio:   0.000075em; */
 .set-speed #neptune dl.infos dd:after {
   content: '19,566 km/h'; }
 
-/* --------------------------------------------------------------------------- size */
-.set-size dl.infos dd span:after {
-  content: 'Equatorial Circumference'; }
+/* planets starting position and lighting effect 
+---------------------------------------------------------------------------
+mercury ; pos: Top */
 
-.set-size #sun dl.infos dd:after {
-  content: '4,370,005 km'; }
-
-.set-size #mercury dl.infos dd:after {
-  content: '15,329 km'; }
-
-.set-size #venus dl.infos dd:after {
-  content: '38,024 km'; }
-
-.set-size #earth dl.infos dd:after {
-  content: '40,030 km'; }
-
-.set-size #mars dl.infos dd:after {
-  content: '21,296 km'; }
-
-.set-size #jupiter dl.infos dd:after {
-  content: '439,263 km'; }
-
-.set-size #saturn dl.infos dd:after {
-  content: '365,882 km'; }
-
-.set-size #uranus dl.infos dd:after {
-  content: '159,354 km'; }
-
-.set-size #neptune dl.infos dd:after {
-  content: '154,704 km'; }
-
-/* --------------------------------------------------------------------------- distance */
-.set-distance dl.infos dd span:after {
-  content: 'From Sun'; }
-
-.set-distance #sun dl.infos dd span:after {
-  content: 'From Earth'; }
-
-.set-distance #sun dl.infos dd:after {
-  content: '149,598,262 km'; }
-
-.set-distance #mercury dl.infos dd:after {
-  content: '57,909,227 km'; }
-
-.set-distance #venus dl.infos dd:after {
-  content: '108,209,475 km'; }
-
-.set-distance #earth dl.infos dd:after {
-  content: '149,598,262 km'; }
-
-.set-distance #mars dl.infos dd:after {
-  content: '227,943,824 km'; }
-
-.set-distance #jupiter dl.infos dd:after {
-  content: '778,340,821 km'; }
-
-.set-distance #saturn dl.infos dd:after {
-  content: '1,426,666,422 km'; }
-
-.set-distance #uranus dl.infos dd:after {
-  content: '2,870,658,186 km'; }
-
-.set-distance #neptune dl.infos dd:after {
-  content: '4,498,396,441 km'; }
-
-/* --------------------------------------------------------------------------- planets starting position and lighting effect */
-/* --------------------------------------------------------------------------- mercury ; pos: Top */
 #mercury .pos {
   left: 50%;
   top: -1%; }
@@ -839,6 +517,7 @@ $distanceScaleRatio:   0.000075em; */
   /* RIGHT */ }
 
 /* --------------------------------------------------------------------------- moon */
+
 #earth .orbit .pos {
   left: 100%;
   top: 50%; }
@@ -1051,14 +730,16 @@ shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50
   box-shadow: inset -12px 0 5px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- DEBUG 
-.pos, 
+/* --------------------------------------------------------------------------- DEBUG  */
+
+/* .pos, 
 .planet, 
 .orbit,
-.ring { animation-duration: 20s!important; }
+.ring { animation-duration: 20s!important; } */
 
-/* */
+
 /* --------------------------------------------------------------------------- navigation styles */
+
 dl.infos {
   position: absolute;
   display: block;
@@ -1112,7 +793,7 @@ dl.infos dd span:after {
   font-size: 11px;
   text-shadow: 1px 1px 2px black; }
 
-.sun #sun .infos,
+/* .sun #sun .infos,
 .mercury #mercury .infos,
 .venus #venus .infos,
 .earth #earth .infos,
@@ -1123,7 +804,7 @@ dl.infos dd span:after {
 .neptune #neptune .infos {
   display: block;
   opacity: 1;
-  transform: rotateX(0deg); }
+  transform: rotateX(0deg); } */
 
 .mercury #mercury.orbit,
 .venus #venus.orbit,
@@ -1135,25 +816,25 @@ dl.infos dd span:after {
 .neptune #neptune.orbit {
   border: 1px solid rgba(255, 255, 255, 0.8); }
 
-.hide-UI h1,
+/* .hide-UI h1,
 .hide-UI #data,
 .hide-UI dl.infos,
 .hide-UI #controls {
   opacity: 0!important;
-  margin-top: -30px; }
+  margin-top: -30px; } */
 
-.hide-UI #data {
+/* .hide-UI #data {
   margin-bottom: -30px; }
 
 .hide-UI .orbit {
-  border: 1px solid rgba(255, 255, 255, 0.2) !important; }
+  border: 1px solid rgba(255, 255, 255, 0.2) !important; } */
 
 h1 {
   width: 100%;
   font-weight: 600;
   font-size: 14px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255); }
 
 h1 span, #navbar h1 a {
   display: inline;
@@ -1162,7 +843,7 @@ h1 span, #navbar h1 a {
   font-weight: 300;
   font-size: 14px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgb(255, 255, 255); }
 
 
 #navbar, #controls, #data {
@@ -1178,16 +859,13 @@ h1 span, #navbar h1 a {
   height: 48px; }
 
 #navbar a, #data a, #controls label {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255);
   display: block;
   position: relative;
   text-decoration: none; }
 
 #navbar a:hover, #data a:hover, #controls label:hover {
-  color: #FFF; }
-
-#data a.active {
-  color: #0CF; }
+  color: rgb(218, 165, 32); }
 
 #navbar a {
   position: absolute;
@@ -1227,12 +905,12 @@ h1 span, #navbar h1 a {
   font-size: 18px; }
 
 #controls label {
-  opacity: .6;
+  opacity: 1;
   height: 24px;
   margin-bottom: 28px; }
 
 #controls label:hover {
-  opacity: 1; }
+  opacity: .6; }
 
 #controls label:before {
   position: absolute;
@@ -1241,7 +919,7 @@ h1 span, #navbar h1 a {
   height: 20px;
   margin-top: 3px;
   text-align: center;
-  color: #FFF;
+  color: rgb(218, 165, 32);
   z-index: 99; }
 
 #controls label span {
@@ -1282,7 +960,7 @@ h1 span, #navbar h1 a {
   position: absolute;
   width: 100px;
   height: 22px;
-  border: 2px solid #FFF;
+  border: 2px solid rgb(218, 165, 32);
   border-radius: 16px; }
 
 #controls input[type="checkbox"]:after {
@@ -1294,7 +972,7 @@ h1 span, #navbar h1 a {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background: #FFF;
+  background: rgb(218, 165, 32);
   z-index: 99; }
 
 #controls label.set-view:before {
@@ -1332,6 +1010,7 @@ h1 span, #navbar h1 a {
   margin-left: 81px; }
 
 /* --------------------------------------------------------------------------- transitions */
+
 .pos {
   transition-property: top, left; }
 
@@ -1431,6 +1110,7 @@ h1 {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAMAAACfBSJ0AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFZoGyU2ybWHKiU2yZV3CgVm+eVm+dV3GhVG2bAAAAmLjslbbqk7ToZIO3aovBZ4e7cJTMkLHmbI/FYX+yXnusWnWlja7kiavhc5fRg6bdhqjfeZ3WgKTbdprUfqHZe5/XTjN33QAAAAp0Uk5T82DQILiggOhMAI3C2HIAAAPgSURBVEjHjZaLVqNAEEQxkoAmIAYIb/j/v9yuqp4BNetum8R4Dtfq6elX8vbE8kt6apsWdkov+bNHkp/QOWvbpqlhTQM6O+f/5F4Mag0qPmSFwUBffuXyLEBleaeVpaNZ/lfuNTWoMMSYqur7pTerqjtQI9PX51yekSICW2DTsvTV/U7yKLlzFxP7gJIAMZPZAlSal5/cuW0oFigA9t62jSi9bdrzdw4YKTw6TfrcgNkX+wpvywOYRCcd29YNLzy+8su6umRvYB1cFZfjbMD4FF6rPmR0lr6aYr5zrxmxBWpusz7nnQNYlUWbvUYubS2ScjJgMxD/2MH+/lG3aeByHs6xmTaY2R/DwL94UESnj56Co5cW/wM2DuMo3N5z8NWyB4KZuJe2LuglqIEUbNhtlq/IuwqCL+SypvDDyb9h6Dqj8BpHvgdydoc6YZOBy1t5KTnY2BkI6/gDZXELr988zY07Q245yAE7GhQRG+QPU7VozsbRzckxONZ1j91cGorh9o3L3hK6aVm5Omfe2eOfZvglshsV1G0Ld5gnF7qJpJoVC8p93m4gRUNS14iaWsBdkvToJgQld7uRjCDzgLVojtZNmpwQTXDrzn2Cu15vDhvIE+p8POAp0S2Qm3l1D9e7wggqOkrThQdsWnJL5HAH0rte39/fAUZuVmB6BibohXtwvZu4d+eMHDzXvnKLH5B3/l3vU5hu8AvXRy44+lWvG0NuH7gi6s2Bo6PCwHVDyG1dfCHO7h2NyxMmCN5iOJVpIWFUSsmpcS4mWoioru/xCAmq3BZ3snypwcWL8JuHIl4Pcp37OakgrMckFwsMywh+oikMI2/iEbIsFgTzs1dYLlYPTShbNbChe8RCwuEcw/mm2Clyrz8JsuMOLNZDAVLMK16cdSbVu2W2WrvVYaz3HTMvvFH47Z3VX4qyNykLjY2gNQR1bxPhCryK2EHZzyyi08YjTmjP86HJhCYhrj/0M+ufjIwlG2OqQhyjDfHqvPhq75+MjA0jVu+ssA7sGV/a7jSFbpbF+aCxogGxBXBW9/agqH169wzzyMeY0m3dfEqEoUQnUOmSS4/zT9OWU5qp6hMmjsItrAfNYf5xkn0I3CaN5n1qhoLlblA3+ff57iCig55+mNUcfhzTdXP5sU94cBZ2rYnbhLQnbjEVl5/zk/0Faw9Kaln21Wfa1KQxh57tL9qXdI991UdQ/4ar1vN9Ke5nZRkWNC5pKPAKa6GlV/7LPlhD1Ha7SssgpAyCj3/bB+P+GdfP0n7ugGzx/WX/9H0XO3Khfdd+FVhbm3/su0/2a9uw/2e/3vf59td9/g/87+wnzrJ1rQAAAABJRU5ErkJggg==); }
 
 /* --------------------------------------------------------------------------- responsive styles */
+
 @media screen and (max-width: 299px) {
   #universe {
     font-size: 20%; } }
