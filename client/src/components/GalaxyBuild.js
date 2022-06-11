@@ -55,6 +55,31 @@ function GalaxyBuild() {
             </div>
             <div id="mars" className="orbit">
                 <div className="pos">
+                <div className="orbit-1">
+                    <div className="pos">
+                    <div className="moon-1"></div>
+                    </div>
+                </div>
+                <div className="orbit-2">
+                    <div className="pos">
+                    <div className="moon-2"></div>
+                    </div>
+                </div>
+                <div className="orbit-3">
+                    <div className="pos">
+                    <div className="moon-3"></div>
+                    </div>
+                </div>
+                <div className="orbit-4">
+                    <div className="pos">
+                    <div className="moon-4"></div>
+                    </div>
+                </div>
+                <div className="orbit-5">
+                    <div className="pos">
+                    <div className="moon-5"></div>
+                    </div>
+                </div>
                 <div className="planet">
                     <dl className="infos">
                     <dt>Mars</dt>
