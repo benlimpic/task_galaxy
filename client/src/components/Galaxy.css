@@ -1,42 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  box-sizing: border-box; }
 
 body {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background-color: #08090A; }
+  background-color: #000000; }
 
 #universe {
   z-index: 1;
@@ -44,21 +11,17 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background-position: center 40%;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: #000000; }
 
 #galaxy {
   position: relative;
   width: 100%;
-  height: 100%;
-  perspective: 4000; }
+  height: 100%; }
 
 #solar-system {
   position: absolute;
   width: 100%;
-  height: 100%;
-  transform-style: preserve-3d; }
+  height: 100%; }
 
 .orbit {
   position: absolute;
@@ -86,7 +49,7 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
-#sun, .planet, #earth .moon {
+#sun, .planet, #earth, .moon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -110,66 +73,9 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
-.ring {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%; }
-
-#saturn .ring {
-  width: 2em;
-  height: 2em;
-  margin-top: -1em;
-  margin-left: -1em;
-  border: 0.3em solid rgba(160, 147, 130, 0.7);
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-
-#saturn .ring:after {
-  border-radius: 50%;
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 50%;
-  width: 2.2em;
-  height: 2.2em;
-  margin-top: -1.1em;
-  margin-left: -1.1em;
-  border: 0.07em solid rgba(160, 147, 130, 0.5);
-  box-sizing: border-box;
-  box-sizing: border-box; } 
 
 /* --------------------------------------------------------------------------- planets index */
 
-#mercury {
-  z-index: 10; }
-
-#venus {
-  z-index: 9; }
-
-#earth {
-  z-index: 8; }
-
-#moon {
-  z-index: 7; }
-
-#mars {
-  z-index: 6; }
-
-#jupiter {
-  z-index: 5; }
-
-#saturn {
-  z-index: 4; }
-
-#uranus {
-  z-index: 3; }
-
-#neptune {
-  z-index: 2; }
-
-#sun {
-  z-index: 1; }
 
 /* --------------------------------------------------------------------------- animations */
 
@@ -210,27 +116,6 @@ body {
 .view-2D .moon {
   transform: rotateX(90deg); }
 
-/* --------------------------------------------------------------------------- 3D view */
-
-.view-3D.zoom-large #sun {
-  transform-style: preserve-3d; }
-
-.view-3D.zoom-large .orbit {
-  transform-style: preserve-3d; }
-
-.view-3D #solar-system {
-  transform: rotateX(75deg); }
-
-.view-3D #sun {
-  transform: rotateX(-90deg); }
-
-.view-3D .ring {
-  transform: rotateX(90deg); }
-
-.view-3D .planet,
-.view-3D .moon {
-  transform: rotateX(0deg); }
-
 /* --------------------------------------------------------------------------- speed */
 /* sideral years */
 
@@ -257,6 +142,9 @@ body {
 #mars .planet,
 #mars.orbit {
   animation-duration: 22.57017s; }
+#mars .orbit .pos,
+#mars .orbit {
+    animation-duration: 0.89764s; }
 
 #jupiter .pos,
 #jupiter .planet,
@@ -367,37 +255,6 @@ body {
   margin-top: -105em;
   margin-left: -105em; }
 
-/* !--------------------------------------------------------------------------- speed */
-
-.set-speed dl.infos dd span:after {
-  content: 'Orbit Velocity'; }
-
-.set-speed #sun dl.infos dd:after {
-  content: '0 km/h'; }
-
-.set-speed #mercury dl.infos dd:after {
-  content: '170,503 km/h'; }
-
-.set-speed #venus dl.infos dd:after {
-  content: '126,074 km/h'; }
-
-.set-speed #earth dl.infos dd:after {
-  content: '107,218 km/h'; }
-
-.set-speed #mars dl.infos dd:after {
-  content: '86,677 km/h'; }
-
-.set-speed #jupiter dl.infos dd:after {
-  content: '47,002 km/h'; }
-
-.set-speed #saturn dl.infos dd:after {
-  content: '34,701 km/h'; }
-
-.set-speed #uranus dl.infos dd:after {
-  content: '24,477 km/h'; }
-
-.set-speed #neptune dl.infos dd:after {
-  content: '19,566 km/h'; }
 
 /* planets starting position and lighting effect 
 ---------------------------------------------------------------------------
@@ -793,289 +650,6 @@ dl.infos dd span:after {
   font-size: 11px;
   text-shadow: 1px 1px 2px black; }
 
-/* .sun #sun .infos,
-.mercury #mercury .infos,
-.venus #venus .infos,
-.earth #earth .infos,
-.mars #mars .infos,
-.jupiter #jupiter .infos,
-.saturn #saturn .infos,
-.uranus #uranus .infos,
-.neptune #neptune .infos {
-  display: block;
-  opacity: 1;
-  transform: rotateX(0deg); } */
-
-.mercury #mercury.orbit,
-.venus #venus.orbit,
-.earth #earth.orbit,
-.mars #mars.orbit,
-.jupiter #jupiter.orbit,
-.saturn #saturn.orbit,
-.uranus #uranus.orbit,
-.neptune #neptune.orbit {
-  border: 1px solid rgba(255, 255, 255, 0.8); }
-
-/* .hide-UI h1,
-.hide-UI #data,
-.hide-UI dl.infos,
-.hide-UI #controls {
-  opacity: 0!important;
-  margin-top: -30px; } */
-
-/* .hide-UI #data {
-  margin-bottom: -30px; }
-
-.hide-UI .orbit {
-  border: 1px solid rgba(255, 255, 255, 0.2) !important; } */
-
-h1 {
-  width: 100%;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  color: rgba(255, 255, 255); }
-
-h1 span, #navbar h1 a {
-  display: inline;
-  position: absolute;
-  padding: 0;
-  font-weight: 300;
-  font-size: 14px;
-  text-align: center;
-  color: rgb(255, 255, 255); }
-
-
-#navbar, #controls, #data {
-  background: rgba(0, 0, 0, 0); }
-
-#navbar {
-  z-index: 99;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 16px;
-  width: 100%;
-  height: 48px; }
-
-#navbar a, #data a, #controls label {
-  color: rgba(255, 255, 255);
-  display: block;
-  position: relative;
-  text-decoration: none; }
-
-#navbar a:hover, #data a:hover, #controls label:hover {
-  color: rgb(218, 165, 32); }
-
-#navbar a {
-  position: absolute;
-  top: 0;
-  height: 48px;
-  padding: 16px;
-  font-size: 14px; }
-
-#toggle-data {
-  left: 0; }
-
-#toggle-controls {
-  right: 0; }
-
-#data, #controls {
-  z-index: 99;
-  position: fixed;
-  opacity: 1;
-  top: 49px;
-  padding: 16px; }
-
-.data-close #data {
-  left: -100%; }
-
-.data-open #data {
-  left: 0px; }
-
-.controls-close #controls {
-  right: -100%; }
-
-.controls-open #controls {
-  right: 0px; }
-
-#data a {
-  margin-bottom: 1px;
-  padding: 6px 10px;
-  font-size: 18px; }
-
-#controls label {
-  opacity: 1;
-  height: 24px;
-  margin-bottom: 28px; }
-
-#controls label:hover {
-  opacity: .6; }
-
-#controls label:before {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-top: 3px;
-  text-align: center;
-  color: rgb(218, 165, 32);
-  z-index: 99; }
-
-#controls label span {
-  display: block;
-  margin-left: 36px;
-  padding-top: 4px;
-  font-size: 18px;
-  color: #FFF; }
-
-#controls input {
-  display: block;
-  appearance: none; }
-
-#controls input[type="radio"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  border: 2px solid #FFF;
-  border-radius: 16px; }
-
-#controls input:checked[type="radio"]:after {
-  content: '';
-  display: block;
-  top: 3px;
-  margin-left: 3px;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #FFF;
-  z-index: 99; }
-
-#controls input[type="checkbox"]:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 22px;
-  border: 2px solid rgb(218, 165, 32);
-  border-radius: 16px; }
-
-#controls input[type="checkbox"]:after {
-  content: '';
-  display: block;
-  top: 1px;
-  left: 2px;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: rgb(218, 165, 32);
-  z-index: 99; }
-
-#controls label.set-view:before {
-  font: bold small-caps 11px/20px sans-serif; }
-
-.view-3D #controls label.set-view:before {
-  content: '2D';
-  margin-left: 82px; }
-
-.view-2D #controls label.set-view:before {
-  content: '3D';
-  margin-left: 7px; }
-
-.view-3D #controls .set-view input:after {
-  margin-left: 3px; }
-
-.view-2D #controls .set-view input:after {
-  margin-left: 81px; }
-
-#controls label.set-zoom:before {
-  font: normal small-caps 18px/14px sans-serif; }
-
-.zoom-large #controls label.set-zoom:before {
-  content: '+';
-  margin-left: 82px; }
-
-.zoom-close #controls label.set-zoom:before {
-  content: '-';
-  margin-left: 7px; }
-
-.zoom-large #controls .set-zoom input:after {
-  margin-left: 3px; }
-
-.zoom-close #controls .set-zoom input:after {
-  margin-left: 81px; }
-
-/* --------------------------------------------------------------------------- transitions */
-
-.pos {
-  transition-property: top, left; }
-
-#solar-system, .orbit,
-.planet,
-.satelite,
-.ring {
-  transition-property: width, height, top, left, margin-left, margin-top, webkit-transform; }
-
-#sun, .icon {
-  transition-property: width, height, webkit-transform; }
-
-#solar-system,
-#sun,
-.orbit,
-.pos,
-.planet,
-.satelite,
-.ring,
-.infos,
-.icon {
-  transition-duration: .8s;
-  transition-timing-function: ease-in-out; }
-
-#solar-system,
-#sun,
-.planet,
-.satelite,
-.ring {
-  transition-delay: 0s; }
-
-.pos {
-  transition-delay: 1s; }
-
-.opening #solar-system,
-.opening #sun,
-.opening .orbit,
-.opening .pos,
-.opening .planet,
-.opening .satelite,
-.opening .ring,
-.opening .infos,
-.opening h1,
-.opening #data,
-.opening dl.infos,
-.opening #controls {
-  transition-duration: 0s;
-  transition-delay: 0s; }
-
-.opening .pos {
-  transition-delay: 0s; }
-
-h1, #data, #controls {
-  transition-property: opacity, margin;
-  transition-duration: .8s;
-  transition-timing-function: ease-in-out; }
-
-h1 {
-  transition-delay: .35s; }
-
-#data {
-  transition-delay: .7s; }
-
-#controls {
-  transition-delay: 1s; }
 
 /* --------------------------------------------------------------------------- images */
 
@@ -1112,58 +686,25 @@ h1 {
 /* --------------------------------------------------------------------------- responsive styles */
 
 @media screen and (max-width: 299px) {
-  #universe {
+  #solar-system {
     font-size: 20%; } }
 @media screen and (min-width: 300px) {
-  #universe {
+  #solar-system {
     font-size: 24%; } }
 @media screen and (min-width: 500px) {
-  #universe {
+  #solar-system {
     font-size: 36%; } }
 @media screen and (min-width: 600px) {
-  #universe {
+  #solar-system {
     font-size: 44%; } }
 @media screen and (min-width: 760px) {
-  #universe {
+  #solar-system {
     font-size: 58%; } }
 @media screen and (min-width: 1000px) {
-  #universe {
-    font-size: 73%; }
-
-  #navbar, #controls, #data {
-    background: transparent; }
-
-  #navbar a {
-    display: none; }
-
-  h1 {
-    font-size: 22px;
-    margin-top: 8px; }
-
-  #controls {
-    padding-right: 32px;
-    top: 12px; }
-
-  #data {
-    position: fixed;
-    top: inherit;
-    bottom: 0;
-    width: 100%;
-    text-align: center; }
-
-  #data a {
-    display: inline-block;
-    text-align: center;
-    font-size: 20px;
-    padding: 15px 15px; }
-
-  .data-open #data, .data-close #data {
-    left: 0px; }
-
-  .controls-open #controls, .controls-close #controls {
-    right: 0px; } }
+  #solar-system {
+    font-size: 73%; } }
 @media screen and (min-width: 1300px) {
-  #universe {
+  #solar-system {
     font-size: 100%; } }
 @media screen and (min-width: 1600px) {
   .zoom-close .scale-d #solar-system {
