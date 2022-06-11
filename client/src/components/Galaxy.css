@@ -220,23 +220,23 @@ body {
 #mars.orbit {
   animation-duration: 12.00021s; }
   
-#mars .orbit .pos,
+#mars .orbit-5 .pos,
 #mars .orbit-1 {
   animation-duration: 1s; }
 
-#mars .orbit .pos,
+#mars .orbit-4 .pos,
 #mars .orbit-2 {
   animation-duration: 1.5s; }
 
-#mars .orbit .pos,
+#mars .orbit-3 .pos,
 #mars .orbit-3 {
   animation-duration: 2s; }
 
-#mars .orbit .pos,
+#mars .orbit-2 .pos,
 #mars .orbit-4 {
   animation-duration: 2.5s; }
 
-#mars .orbit .pos,
+#mars .orbit-1 .pos,
 #mars .orbit-5 {
   animation-duration: 3s; }
 
