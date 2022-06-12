@@ -18,118 +18,169 @@ function GalaxyBuild() {
         <div id="universe" className="scale-stretched">
         <div id="galaxy">
             <div id="solar-system" className="earth">
-            <div id="mercury" className="orbit">
+
+
+            <div id="task-1" className="orbit">
                 <div className="pos">
-                <div className="planet">
-                    <dl className="infos">
-                    <dt>Mercury</dt>
-                    <dd><span></span></dd>
-                    </dl>
-                </div>
-                </div>
-            </div>
-            <div id="venus" className="orbit">
-                <div className="pos">
-                <div className="planet">
-                    <dl className="infos">
-                    <dt>Venus</dt>
-                    <dd><span></span></dd>
-                    </dl>
-                </div>
-                </div>
-            </div>
-            <div id="earth" className="orbit">
-                <div className="pos">
-                <div className="orbit">
-                    <div className="pos">
-                    <div className="moon"></div>
+                    <div className="orbit-1">
+                        <div className="pos">
+                        <div className="subtask-1"></div>
+                        </div>
                     </div>
-                </div>
-                <div className="planet">
-                    <dl className="infos">
-                    <dt>Earth</dt>
-                    <dd><span></span></dd>
-                    </dl>
-                </div>
-                </div>
-            </div>
-            <div id="mars" className="orbit">
-                <div className="pos">
-                <div className="orbit-1">
-                    <div className="pos">
-                    <div className="moon-1"></div>
+                    <div className="orbit-2">
+                        <div className="pos">
+                        <div className="subtask-2"></div>
+                        </div>
                     </div>
-                </div>
-                <div className="orbit-2">
-                    <div className="pos">
-                    <div className="moon-2"></div>
+                    <div className="orbit-3">
+                        <div className="pos">
+                        <div className="subtask-3"></div>
+                        </div>
                     </div>
-                </div>
-                <div className="orbit-3">
-                    <div className="pos">
-                    <div className="moon-3"></div>
+                    <div className="orbit-4">
+                        <div className="pos">
+                        <div className="subtask-4"></div>
+                        </div>
                     </div>
-                </div>
-                <div className="orbit-4">
-                    <div className="pos">
-                    <div className="moon-4"></div>
+                    <div className="orbit-5">
+                        <div className="pos">
+                        <div className="subtask-5"></div>
+                        </div>
                     </div>
+                    <div className="planet"></div>
                 </div>
-                <div className="orbit-5">
-                    <div className="pos">
-                    <div className="moon-5"></div>
+            </div>
+
+
+            <div id="task-2" className="orbit">
+                <div className="pos">
+                    <div className="orbit-1">
+                        <div className="pos">
+                        <div className="subtask-1"></div>
+                        </div>
                     </div>
-                </div>
-                <div className="planet">
-                    <dl className="infos">
-                    <dt>Mars</dt>
-                    <dd><span></span></dd>
-                    </dl>
-                </div>
+                    <div className="orbit-2">
+                        <div className="pos">
+                        <div className="subtask-2"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-3">
+                        <div className="pos">
+                        <div className="subtask-3"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-4">
+                        <div className="pos">
+                        <div className="subtask-4"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-5">
+                        <div className="pos">
+                        <div className="subtask-5"></div>
+                        </div>
+                    </div>
+                    <div className="planet"></div>
                 </div>
             </div>
-            <div id="jupiter" className="orbit">
+
+
+            <div id="task-3" className="orbit">
                 <div className="pos">
-                <div className="planet">
-                    <dl className="infos">
-                    <dt>Jupiter</dt>
-                    <dd><span></span></dd>
-                    </dl>
-                </div>
+                    <div className="orbit-1">
+                        <div className="pos">
+                        <div className="subtask-1"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-2">
+                        <div className="pos">
+                        <div className="subtask-2"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-3">
+                        <div className="pos">
+                        <div className="subtask-3"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-4">
+                        <div className="pos">
+                        <div className="subtask-4"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-5">
+                        <div className="pos">
+                        <div className="subtask-5"></div>
+                        </div>
+                    </div>
+                    <div className="planet"></div>
                 </div>
             </div>
-            <div id="saturn" className="orbit">
+
+
+            <div id="task-4" className="orbit">
                 <div className="pos">
-                <div className="planet">
-                    <div className="ring"></div>
-                    <dl className="infos">
-                    <dt>Saturn</dt>
-                    <dd><span></span></dd>
-                    </dl>
-                </div>
+                    <div className="orbit-1">
+                        <div className="pos">
+                        <div className="subtask-1"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-2">
+                        <div className="pos">
+                        <div className="subtask-2"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-3">
+                        <div className="pos">
+                        <div className="subtask-3"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-4">
+                        <div className="pos">
+                        <div className="subtask-4"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-5">
+                        <div className="pos">
+                        <div className="subtask-5"></div>
+                        </div>
+                    </div>
+                    <div className="planet"></div>
                 </div>
             </div>
-            <div id="uranus" className="orbit">
+
+            
+            <div id="task-5" className="orbit">
                 <div className="pos">
-                <div className="planet">
-                    <dl className="infos">
-                    <dt>Uranus</dt>
-                    <dd><span></span></dd>
-                    </dl>
-                </div>
+                    <div className="orbit-1">
+                        <div className="pos">
+                        <div className="subtask-1"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-2">
+                        <div className="pos">
+                        <div className="subtask-2"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-3">
+                        <div className="pos">
+                        <div className="subtask-3"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-4">
+                        <div className="pos">
+                        <div className="subtask-4"></div>
+                        </div>
+                    </div>
+                    <div className="orbit-5">
+                        <div className="pos">
+                        <div className="subtask-5"></div>
+                        </div>
+                    </div>
+                    <div className="planet"></div>
                 </div>
             </div>
-            <div id="neptune" className="orbit">
-                <div className="pos">
-                <div className="planet">
-                    <dl className="infos">
-                    <dt>Neptune</dt>
-                    <dd><span></span></dd>
-                    </dl>
-                </div>
-                </div>
-            </div>
-            <div id="sun">
+
+
+            <div id="project">
                 <dl className="infos">
                 <dt>Sun</dt>
                 <dd><span></span></dd>
