@@ -35,7 +35,7 @@ puts "Sewing Seeds in Soil!"
         description: "Test Task Example 2 Description!",
         color: "#FB7D02",
         notes: "Notes For Test Task!",
-        status: "In Process",
+        status: "In Progress",
         priority: "Low",
         due_date: "2020-07-01",
         project_id: 1

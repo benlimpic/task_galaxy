@@ -20,31 +20,32 @@ function GalaxyBuild() {
             <div id="solar-system" className="earth">
 
 
-            <div id="task-1" className="orbit">
+
+            <div id="earth" className="orbit">
                 <div className="pos">
                     <div className="orbit-1">
                         <div className="pos">
-                        <div className="subtask-1"></div>
+                        <div className="moon-1"></div>
                         </div>
                     </div>
                     <div className="orbit-2">
                         <div className="pos">
-                        <div className="subtask-2"></div>
+                        <div className="moon-2"></div>
                         </div>
                     </div>
                     <div className="orbit-3">
                         <div className="pos">
-                        <div className="subtask-3"></div>
+                        <div className="moon-3"></div>
                         </div>
                     </div>
                     <div className="orbit-4">
                         <div className="pos">
-                        <div className="subtask-4"></div>
+                        <div className="moon-4"></div>
                         </div>
                     </div>
                     <div className="orbit-5">
                         <div className="pos">
-                        <div className="subtask-5"></div>
+                        <div className="moon-5"></div>
                         </div>
                     </div>
                     <div className="planet"></div>
@@ -52,31 +53,31 @@ function GalaxyBuild() {
             </div>
 
 
-            <div id="task-2" className="orbit">
+            <div id="mars" className="orbit">
                 <div className="pos">
                     <div className="orbit-1">
                         <div className="pos">
-                        <div className="subtask-1"></div>
+                        <div className="moon-1"></div>
                         </div>
                     </div>
                     <div className="orbit-2">
                         <div className="pos">
-                        <div className="subtask-2"></div>
+                        <div className="moon-2"></div>
                         </div>
                     </div>
                     <div className="orbit-3">
                         <div className="pos">
-                        <div className="subtask-3"></div>
+                        <div className="moon-3"></div>
                         </div>
                     </div>
                     <div className="orbit-4">
                         <div className="pos">
-                        <div className="subtask-4"></div>
+                        <div className="moon-4"></div>
                         </div>
                     </div>
                     <div className="orbit-5">
                         <div className="pos">
-                        <div className="subtask-5"></div>
+                        <div className="moon-5"></div>
                         </div>
                     </div>
                     <div className="planet"></div>
@@ -84,31 +85,31 @@ function GalaxyBuild() {
             </div>
 
 
-            <div id="task-3" className="orbit">
+            <div id="jupiter" className="orbit">
                 <div className="pos">
                     <div className="orbit-1">
                         <div className="pos">
-                        <div className="subtask-1"></div>
+                        <div className="moon-1"></div>
                         </div>
                     </div>
                     <div className="orbit-2">
                         <div className="pos">
-                        <div className="subtask-2"></div>
+                        <div className="moon-2"></div>
                         </div>
                     </div>
                     <div className="orbit-3">
                         <div className="pos">
-                        <div className="subtask-3"></div>
+                        <div className="moon-3"></div>
                         </div>
                     </div>
                     <div className="orbit-4">
                         <div className="pos">
-                        <div className="subtask-4"></div>
+                        <div className="moon-4"></div>
                         </div>
                     </div>
                     <div className="orbit-5">
                         <div className="pos">
-                        <div className="subtask-5"></div>
+                        <div className="moon-5"></div>
                         </div>
                     </div>
                     <div className="planet"></div>
@@ -116,31 +117,31 @@ function GalaxyBuild() {
             </div>
 
 
-            <div id="task-4" className="orbit">
+            <div id="saturn" className="orbit">
                 <div className="pos">
                     <div className="orbit-1">
                         <div className="pos">
-                        <div className="subtask-1"></div>
+                        <div className="moon-1"></div>
                         </div>
                     </div>
                     <div className="orbit-2">
                         <div className="pos">
-                        <div className="subtask-2"></div>
+                        <div className="moon-2"></div>
                         </div>
                     </div>
                     <div className="orbit-3">
                         <div className="pos">
-                        <div className="subtask-3"></div>
+                        <div className="moon-3"></div>
                         </div>
                     </div>
                     <div className="orbit-4">
                         <div className="pos">
-                        <div className="subtask-4"></div>
+                        <div className="moon-4"></div>
                         </div>
                     </div>
                     <div className="orbit-5">
                         <div className="pos">
-                        <div className="subtask-5"></div>
+                        <div className="moon-5"></div>
                         </div>
                     </div>
                     <div className="planet"></div>
@@ -148,31 +149,31 @@ function GalaxyBuild() {
             </div>
 
             
-            <div id="task-5" className="orbit">
+            <div id="uranus" className="orbit">
                 <div className="pos">
                     <div className="orbit-1">
                         <div className="pos">
-                        <div className="subtask-1"></div>
+                        <div className="moon-1"></div>
                         </div>
                     </div>
                     <div className="orbit-2">
                         <div className="pos">
-                        <div className="subtask-2"></div>
+                        <div className="moon-2"></div>
                         </div>
                     </div>
                     <div className="orbit-3">
                         <div className="pos">
-                        <div className="subtask-3"></div>
+                        <div className="moon-3"></div>
                         </div>
                     </div>
                     <div className="orbit-4">
                         <div className="pos">
-                        <div className="subtask-4"></div>
+                        <div className="moon-4"></div>
                         </div>
                     </div>
                     <div className="orbit-5">
                         <div className="pos">
-                        <div className="subtask-5"></div>
+                        <div className="moon-5"></div>
                         </div>
                     </div>
                     <div className="planet"></div>
@@ -180,7 +181,7 @@ function GalaxyBuild() {
             </div>
 
 
-            <div id="project">
+            <div id="sun">
                 <dl className="infos">
                 <dt>Sun</dt>
                 <dd><span></span></dd>
