@@ -48,6 +48,7 @@ body {
   
 #sun {
   background-color: #FB7209;
+  z-index: 2; 
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 0 60px rgba(255, 160, 60, 0.4); }
@@ -481,16 +482,7 @@ body {
   animation-name: orbit;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
-.orbit-5h {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  transform-style: preserve-3d;
-  animation-name: orbit;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+
 
 /*$----------------------------------------------- */
 
@@ -1675,6 +1667,2981 @@ body {
 
 /* $$-------------------------------------------------------------------------------- */
 
+/* $$  ---------------- TASK 3 ----------------- */
+
+/* ## ----------------- NORTH ------------------  */
+
+#earth-3 .pos {
+  left: 50%;
+  top: 100%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#earth-3 .pos,
+#earth-3 .planet,
+#earth-3.orbit {
+  animation-duration: 8s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #earth-3.orbit {
+  width: 55em;
+  height: 55em;
+  margin-top: -27.5em;
+  margin-left: -27.5em; }   
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #earth-3 .planet {
+  font-size: 4em; }
+  .scale-stretched #earth-3 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-3 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-3 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-3 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-3 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#earth-3 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAGBQTFRFGDRdAyFNIDxkQld5CCZTIztsJD1lAAAArsblO230dJfgP2vUnLbbbovAOF2vN1GERnb0Un/yW3asWH3PeY+uhKfyYXaVjafNT2WNeJ3zv9f0nrzzX4rzkLHzrcjzbZX0L9IPbAAAAAh0Uk5TfSC49Uv+4wC/XoCAAAACEUlEQVQoz12T2WKrMAxECWDC4n1fZOv//7IiaXp760cOtkaj0fT8nHXe1LLEmJd5/fk4feDGGFPeR0U/5G39H290zXohhJUi+czY9gs/lhytsM4JvvPEebJZsccH3zSldDrX6uhw8jMl/+Y33nKWibdQChhTsDRzXdbm5Y1nla1LYxAwGjsChvPmcb7xGrMVrtemQdPB0ltt6C6Z80p4y164CxpqMMcBZdRWey9O2rg9p5VlIS5ttMGCiGFUgn20xoXP6zQrJd2JAKW83q11tF5Cb9zZPE9btPIcI5AmLKXXEfoIASGchLeJ5eTCKNA7GMReu8HR26AGLqnUxFRyF3U7aqFrpQVjXrXBOJGXKUexl5fgPsgzqjpIV2sAztk4ZZ/2gVBqfb8NJH/QwcC5j1P0KTU0UOttKrUHh8Y2qL/9jcUZAsCrJTwOHYyG3so3XrJNJ7U1Xn4UfWiAW1nrPPllmqk4v1lrRQMarQ2QPKonBNmyLlScGg1Ik6C6QG8XbA3P5NlKI6EonGHoA2gY5BwZVqAAReIeyXNlyvJ9DJpWozcPU8hzJFNsvAf6pIySOooDUBA6tRBCP5OUav4OE1NSXHu9nQ+kn9LiklXbTxSJS7fvt1kAx+Wc9H57/Aty9FImms3Or+uSBOPy+LUGc/RkT6KgO0lVY57/LpHKlEnrvacV+LtE7xVkSuW8bL9W8AvOdz8ZXmQqKAAAAABJRU5ErkJggg==); }  
+  #earth-3 .moon-1 {
+    background-color: white; }
+  #earth-3 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #earth-3 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #earth-3 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #earth-3 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #earth-3 .orbit .pos,
+  #earth-3 .orbit-1a {
+    animation-duration: 2s; }
+  #earth-3 .orbit-1b {
+    animation-duration: 2s; }
+  #earth-3 .orbit-1c {
+    animation-duration: 2s; }
+  #earth-3 .orbit-1d {
+    animation-duration: 2s; }
+  #earth-3 .orbit-1e {
+    animation-duration: 2s; }
+  #earth-3 .orbit-1f {
+    animation-duration: 2s; }
+  #earth-3 .orbit-1g {
+    animation-duration: 2s; }
+  #earth-3 .orbit-1h {
+    animation-duration: 2s; }
+
+  #earth-3 .orbit .pos,
+  #earth-3 .orbit-2a {
+    animation-duration: 2.5s; }
+  #earth-3 .orbit-2b {
+    animation-duration: 2.5s; }
+  #earth-3 .orbit-2c {
+    animation-duration: 2.5s; }
+  #earth-3 .orbit-2d {
+    animation-duration: 2.5s; }
+  #earth-3 .orbit-2e {
+    animation-duration: 2.5s; }
+  #earth-3 .orbit-2f {
+    animation-duration: 2.5s; }
+  #earth-3 .orbit-2g {
+    animation-duration: 2.5s; }
+  #earth-3 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #earth-3 .orbit .pos,
+  #earth-3 .orbit-3a {
+    animation-duration: 3s; }
+  #earth-3 .orbit-3b {
+    animation-duration: 3s; }
+  #earth-3 .orbit-3c {
+    animation-duration: 3s; }
+  #earth-3 .orbit-3d {
+    animation-duration: 3s; }
+  #earth-3 .orbit-3e {
+    animation-duration: 3s; }
+  #earth-3 .orbit-3f {
+    animation-duration: 3s; }
+  #earth-3 .orbit-3g {
+    animation-duration: 3s; }
+  #earth-3 .orbit-3h {
+    animation-duration: 3s; }
+
+  #earth-3 .orbit .pos,
+  #earth-3 .orbit-4a {
+    animation-duration: 3.5s; }
+  #earth-3 .orbit-4b {
+    animation-duration: 3.5s; }
+  #earth-3 .orbit-4c {
+    animation-duration: 3.5s; }
+  #earth-3 .orbit-4d {
+    animation-duration: 3.5s; }
+  #earth-3 .orbit-4e {
+    animation-duration: 3.5s; }
+  #earth-3 .orbit-4f {
+    animation-duration: 3.5s; }
+  #earth-3 .orbit-4g {
+    animation-duration: 3.5s; }
+  #earth-3 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #earth-3 .orbit .pos,
+  #earth-3 .orbit-5a {
+    animation-duration: 4s; }
+  #earth-3 .orbit-5b {
+    animation-duration: 4s; }
+  #earth-3 .orbit-5c {
+    animation-duration: 4s; }
+  #earth-3 .orbit-5d {
+    animation-duration: 4s; }
+  #earth-3 .orbit-5e {
+    animation-duration: 4s; }
+  #earth-3 .orbit-5f {
+    animation-duration: 4s; }
+  #earth-3 .orbit-5g {
+    animation-duration: 4s; }
+  #earth-3 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-3 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-3 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-3 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-3 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-3 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-3 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-3 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-3 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-3 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-3 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-3 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-3 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-3 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-3 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-3 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-3 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-3 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-3 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-3 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-3 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-3 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-3 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-3 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-3 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-3 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-3 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-3 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-3 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-3 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-3 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-3 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-3 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-3 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-3 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-3 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-3 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-3 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-3 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-3 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-3 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #earth-3 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #earth-3 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #earth-3 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #earth-3 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #earth-3 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #earth-3 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #earth-3 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #earth-3 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#earth-3 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-3 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-3 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-3 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-3 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-3 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-3 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-3 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#earth-3 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-3 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-3 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-3 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-3 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-3 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-3 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-3 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#earth-3 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-3 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-3 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-3 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-3 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-3 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-3 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-3 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#earth-3 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-3 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-3 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-3 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-3 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-3 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-3 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-3 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 4 ----------------- */
+
+/* ## ----------------- SOUTH ------------------  */
+
+#earth-4 .pos {
+  left: 50%;
+  top: 0%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#earth-4 .pos,
+#earth-4 .planet,
+#earth-4.orbit {
+  animation-duration: 8s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #earth-4.orbit {
+  width: 55em;
+  height: 55em;
+  margin-top: -27.5em;
+  margin-left: -27.5em; }   
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #earth-4 .planet {
+  font-size: 4em; }
+  .scale-stretched #earth-4 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-4 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-4 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-4 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-4 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#earth-4 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAGBQTFRFGDRdAyFNIDxkQld5CCZTIztsJD1lAAAArsblO230dJfgP2vUnLbbbovAOF2vN1GERnb0Un/yW3asWH3PeY+uhKfyYXaVjafNT2WNeJ3zv9f0nrzzX4rzkLHzrcjzbZX0L9IPbAAAAAh0Uk5TfSC49Uv+4wC/XoCAAAACEUlEQVQoz12T2WKrMAxECWDC4n1fZOv//7IiaXp760cOtkaj0fT8nHXe1LLEmJd5/fk4feDGGFPeR0U/5G39H290zXohhJUi+czY9gs/lhytsM4JvvPEebJZsccH3zSldDrX6uhw8jMl/+Y33nKWibdQChhTsDRzXdbm5Y1nla1LYxAwGjsChvPmcb7xGrMVrtemQdPB0ltt6C6Z80p4y164CxpqMMcBZdRWey9O2rg9p5VlIS5ttMGCiGFUgn20xoXP6zQrJd2JAKW83q11tF5Cb9zZPE9btPIcI5AmLKXXEfoIASGchLeJ5eTCKNA7GMReu8HR26AGLqnUxFRyF3U7aqFrpQVjXrXBOJGXKUexl5fgPsgzqjpIV2sAztk4ZZ/2gVBqfb8NJH/QwcC5j1P0KTU0UOttKrUHh8Y2qL/9jcUZAsCrJTwOHYyG3so3XrJNJ7U1Xn4UfWiAW1nrPPllmqk4v1lrRQMarQ2QPKonBNmyLlScGg1Ik6C6QG8XbA3P5NlKI6EonGHoA2gY5BwZVqAAReIeyXNlyvJ9DJpWozcPU8hzJFNsvAf6pIySOooDUBA6tRBCP5OUav4OE1NSXHu9nQ+kn9LiklXbTxSJS7fvt1kAx+Wc9H57/Aty9FImms3Or+uSBOPy+LUGc/RkT6KgO0lVY57/LpHKlEnrvacV+LtE7xVkSuW8bL9W8AvOdz8ZXmQqKAAAAABJRU5ErkJggg==); }  
+  #earth-4 .moon-1 {
+    background-color: white; }
+  #earth-4 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #earth-4 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #earth-4 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #earth-4 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #earth-4 .orbit .pos,
+  #earth-4 .orbit-1a {
+    animation-duration: 2s; }
+  #earth-4 .orbit-1b {
+    animation-duration: 2s; }
+  #earth-4 .orbit-1c {
+    animation-duration: 2s; }
+  #earth-4 .orbit-1d {
+    animation-duration: 2s; }
+  #earth-4 .orbit-1e {
+    animation-duration: 2s; }
+  #earth-4 .orbit-1f {
+    animation-duration: 2s; }
+  #earth-4 .orbit-1g {
+    animation-duration: 2s; }
+  #earth-4 .orbit-1h {
+    animation-duration: 2s; }
+
+  #earth-4 .orbit .pos,
+  #earth-4 .orbit-2a {
+    animation-duration: 2.5s; }
+  #earth-4 .orbit-2b {
+    animation-duration: 2.5s; }
+  #earth-4 .orbit-2c {
+    animation-duration: 2.5s; }
+  #earth-4 .orbit-2d {
+    animation-duration: 2.5s; }
+  #earth-4 .orbit-2e {
+    animation-duration: 2.5s; }
+  #earth-4 .orbit-2f {
+    animation-duration: 2.5s; }
+  #earth-4 .orbit-2g {
+    animation-duration: 2.5s; }
+  #earth-4 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #earth-4 .orbit .pos,
+  #earth-4 .orbit-3a {
+    animation-duration: 3s; }
+  #earth-4 .orbit-3b {
+    animation-duration: 3s; }
+  #earth-4 .orbit-3c {
+    animation-duration: 3s; }
+  #earth-4 .orbit-3d {
+    animation-duration: 3s; }
+  #earth-4 .orbit-3e {
+    animation-duration: 3s; }
+  #earth-4 .orbit-3f {
+    animation-duration: 3s; }
+  #earth-4 .orbit-3g {
+    animation-duration: 3s; }
+  #earth-4 .orbit-3h {
+    animation-duration: 3s; }
+
+  #earth-4 .orbit .pos,
+  #earth-4 .orbit-4a {
+    animation-duration: 3.5s; }
+  #earth-4 .orbit-4b {
+    animation-duration: 3.5s; }
+  #earth-4 .orbit-4c {
+    animation-duration: 3.5s; }
+  #earth-4 .orbit-4d {
+    animation-duration: 3.5s; }
+  #earth-4 .orbit-4e {
+    animation-duration: 3.5s; }
+  #earth-4 .orbit-4f {
+    animation-duration: 3.5s; }
+  #earth-4 .orbit-4g {
+    animation-duration: 3.5s; }
+  #earth-4 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #earth-4 .orbit .pos,
+  #earth-4 .orbit-5a {
+    animation-duration: 4s; }
+  #earth-4 .orbit-5b {
+    animation-duration: 4s; }
+  #earth-4 .orbit-5c {
+    animation-duration: 4s; }
+  #earth-4 .orbit-5d {
+    animation-duration: 4s; }
+  #earth-4 .orbit-5e {
+    animation-duration: 4s; }
+  #earth-4 .orbit-5f {
+    animation-duration: 4s; }
+  #earth-4 .orbit-5g {
+    animation-duration: 4s; }
+  #earth-4 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-4 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-4 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-4 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-4 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-4 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-4 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-4 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-4 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-4 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-4 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-4 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-4 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-4 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-4 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-4 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-4 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-4 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-4 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-4 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-4 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-4 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-4 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-4 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-4 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-4 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-4 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-4 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-4 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-4 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-4 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-4 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-4 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-4 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-4 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-4 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-4 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-4 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-4 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-4 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-4 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #earth-4 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #earth-4 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #earth-4 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #earth-4 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #earth-4 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #earth-4 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #earth-4 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #earth-4 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#earth-4 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-4 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-4 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-4 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-4 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-4 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-4 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-4 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#earth-4 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-4 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-4 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-4 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-4 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-4 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-4 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-4 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#earth-4 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-4 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-4 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-4 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-4 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-4 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-4 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-4 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#earth-4 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-4 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-4 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-4 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-4 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-4 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-4 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-4 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 5 ----------------- */
+
+/* ## ----------------- SOUTHWEST ------------------  */
+
+#earth-5 .pos {
+  left: 85%;
+  top: 15%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#earth-5 .pos,
+#earth-5 .planet,
+#earth-5.orbit {
+  animation-duration: 8s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #earth-5.orbit {
+  width: 55em;
+  height: 55em;
+  margin-top: -27.5em;
+  margin-left: -27.5em; }   
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #earth-5 .planet {
+  font-size: 4em; }
+  .scale-stretched #earth-5 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-5 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-5 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-5 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-5 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#earth-5 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAGBQTFRFGDRdAyFNIDxkQld5CCZTIztsJD1lAAAArsblO230dJfgP2vUnLbbbovAOF2vN1GERnb0Un/yW3asWH3PeY+uhKfyYXaVjafNT2WNeJ3zv9f0nrzzX4rzkLHzrcjzbZX0L9IPbAAAAAh0Uk5TfSC49Uv+4wC/XoCAAAACEUlEQVQoz12T2WKrMAxECWDC4n1fZOv//7IiaXp760cOtkaj0fT8nHXe1LLEmJd5/fk4feDGGFPeR0U/5G39H290zXohhJUi+czY9gs/lhytsM4JvvPEebJZsccH3zSldDrX6uhw8jMl/+Y33nKWibdQChhTsDRzXdbm5Y1nla1LYxAwGjsChvPmcb7xGrMVrtemQdPB0ltt6C6Z80p4y164CxpqMMcBZdRWey9O2rg9p5VlIS5ttMGCiGFUgn20xoXP6zQrJd2JAKW83q11tF5Cb9zZPE9btPIcI5AmLKXXEfoIASGchLeJ5eTCKNA7GMReu8HR26AGLqnUxFRyF3U7aqFrpQVjXrXBOJGXKUexl5fgPsgzqjpIV2sAztk4ZZ/2gVBqfb8NJH/QwcC5j1P0KTU0UOttKrUHh8Y2qL/9jcUZAsCrJTwOHYyG3so3XrJNJ7U1Xn4UfWiAW1nrPPllmqk4v1lrRQMarQ2QPKonBNmyLlScGg1Ik6C6QG8XbA3P5NlKI6EonGHoA2gY5BwZVqAAReIeyXNlyvJ9DJpWozcPU8hzJFNsvAf6pIySOooDUBA6tRBCP5OUav4OE1NSXHu9nQ+kn9LiklXbTxSJS7fvt1kAx+Wc9H57/Aty9FImms3Or+uSBOPy+LUGc/RkT6KgO0lVY57/LpHKlEnrvacV+LtE7xVkSuW8bL9W8AvOdz8ZXmQqKAAAAABJRU5ErkJggg==); }  
+  #earth-5 .moon-1 {
+    background-color: white; }
+  #earth-5 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #earth-5 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #earth-5 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #earth-5 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #earth-5 .orbit .pos,
+  #earth-5 .orbit-1a {
+    animation-duration: 2s; }
+  #earth-5 .orbit-1b {
+    animation-duration: 2s; }
+  #earth-5 .orbit-1c {
+    animation-duration: 2s; }
+  #earth-5 .orbit-1d {
+    animation-duration: 2s; }
+  #earth-5 .orbit-1e {
+    animation-duration: 2s; }
+  #earth-5 .orbit-1f {
+    animation-duration: 2s; }
+  #earth-5 .orbit-1g {
+    animation-duration: 2s; }
+  #earth-5 .orbit-1h {
+    animation-duration: 2s; }
+
+  #earth-5 .orbit .pos,
+  #earth-5 .orbit-2a {
+    animation-duration: 2.5s; }
+  #earth-5 .orbit-2b {
+    animation-duration: 2.5s; }
+  #earth-5 .orbit-2c {
+    animation-duration: 2.5s; }
+  #earth-5 .orbit-2d {
+    animation-duration: 2.5s; }
+  #earth-5 .orbit-2e {
+    animation-duration: 2.5s; }
+  #earth-5 .orbit-2f {
+    animation-duration: 2.5s; }
+  #earth-5 .orbit-2g {
+    animation-duration: 2.5s; }
+  #earth-5 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #earth-5 .orbit .pos,
+  #earth-5 .orbit-3a {
+    animation-duration: 3s; }
+  #earth-5 .orbit-3b {
+    animation-duration: 3s; }
+  #earth-5 .orbit-3c {
+    animation-duration: 3s; }
+  #earth-5 .orbit-3d {
+    animation-duration: 3s; }
+  #earth-5 .orbit-3e {
+    animation-duration: 3s; }
+  #earth-5 .orbit-3f {
+    animation-duration: 3s; }
+  #earth-5 .orbit-3g {
+    animation-duration: 3s; }
+  #earth-5 .orbit-3h {
+    animation-duration: 3s; }
+
+  #earth-5 .orbit .pos,
+  #earth-5 .orbit-4a {
+    animation-duration: 3.5s; }
+  #earth-5 .orbit-4b {
+    animation-duration: 3.5s; }
+  #earth-5 .orbit-4c {
+    animation-duration: 3.5s; }
+  #earth-5 .orbit-4d {
+    animation-duration: 3.5s; }
+  #earth-5 .orbit-4e {
+    animation-duration: 3.5s; }
+  #earth-5 .orbit-4f {
+    animation-duration: 3.5s; }
+  #earth-5 .orbit-4g {
+    animation-duration: 3.5s; }
+  #earth-5 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #earth-5 .orbit .pos,
+  #earth-5 .orbit-5a {
+    animation-duration: 4s; }
+  #earth-5 .orbit-5b {
+    animation-duration: 4s; }
+  #earth-5 .orbit-5c {
+    animation-duration: 4s; }
+  #earth-5 .orbit-5d {
+    animation-duration: 4s; }
+  #earth-5 .orbit-5e {
+    animation-duration: 4s; }
+  #earth-5 .orbit-5f {
+    animation-duration: 4s; }
+  #earth-5 .orbit-5g {
+    animation-duration: 4s; }
+  #earth-5 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-5 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-5 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-5 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-5 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-5 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-5 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-5 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-5 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-5 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-5 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-5 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-5 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-5 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-5 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-5 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-5 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-5 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-5 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-5 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-5 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-5 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-5 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-5 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-5 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-5 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-5 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-5 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-5 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-5 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-5 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-5 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-5 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-5 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-5 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-5 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-5 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-5 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-5 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-5 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-5 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #earth-5 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #earth-5 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #earth-5 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #earth-5 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #earth-5 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #earth-5 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #earth-5 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #earth-5 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#earth-5 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-5 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-5 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-5 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-5 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-5 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-5 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-5 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#earth-5 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-5 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-5 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-5 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-5 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-5 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-5 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-5 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#earth-5 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-5 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-5 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-5 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-5 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-5 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-5 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-5 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#earth-5 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-5 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-5 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-5 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-5 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-5 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-5 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-5 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 6 ----------------- */
+
+/* ## ----------------- NORTHEAST ------------------  */
+
+#earth-6 .pos {
+  left: 15%;
+  top: 85%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#earth-6 .pos,
+#earth-6 .planet,
+#earth-6.orbit {
+  animation-duration: 8s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #earth-6.orbit {
+  width: 55em;
+  height: 55em;
+  margin-top: -27.5em;
+  margin-left: -27.5em; }   
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #earth-6 .planet {
+  font-size: 4em; }
+  .scale-stretched #earth-6 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-6 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-6 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-6 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-6 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#earth-6 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAGBQTFRFGDRdAyFNIDxkQld5CCZTIztsJD1lAAAArsblO230dJfgP2vUnLbbbovAOF2vN1GERnb0Un/yW3asWH3PeY+uhKfyYXaVjafNT2WNeJ3zv9f0nrzzX4rzkLHzrcjzbZX0L9IPbAAAAAh0Uk5TfSC49Uv+4wC/XoCAAAACEUlEQVQoz12T2WKrMAxECWDC4n1fZOv//7IiaXp760cOtkaj0fT8nHXe1LLEmJd5/fk4feDGGFPeR0U/5G39H290zXohhJUi+czY9gs/lhytsM4JvvPEebJZsccH3zSldDrX6uhw8jMl/+Y33nKWibdQChhTsDRzXdbm5Y1nla1LYxAwGjsChvPmcb7xGrMVrtemQdPB0ltt6C6Z80p4y164CxpqMMcBZdRWey9O2rg9p5VlIS5ttMGCiGFUgn20xoXP6zQrJd2JAKW83q11tF5Cb9zZPE9btPIcI5AmLKXXEfoIASGchLeJ5eTCKNA7GMReu8HR26AGLqnUxFRyF3U7aqFrpQVjXrXBOJGXKUexl5fgPsgzqjpIV2sAztk4ZZ/2gVBqfb8NJH/QwcC5j1P0KTU0UOttKrUHh8Y2qL/9jcUZAsCrJTwOHYyG3so3XrJNJ7U1Xn4UfWiAW1nrPPllmqk4v1lrRQMarQ2QPKonBNmyLlScGg1Ik6C6QG8XbA3P5NlKI6EonGHoA2gY5BwZVqAAReIeyXNlyvJ9DJpWozcPU8hzJFNsvAf6pIySOooDUBA6tRBCP5OUav4OE1NSXHu9nQ+kn9LiklXbTxSJS7fvt1kAx+Wc9H57/Aty9FImms3Or+uSBOPy+LUGc/RkT6KgO0lVY57/LpHKlEnrvacV+LtE7xVkSuW8bL9W8AvOdz8ZXmQqKAAAAABJRU5ErkJggg==); }  
+  #earth-6 .moon-1 {
+    background-color: white; }
+  #earth-6 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #earth-6 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #earth-6 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #earth-6 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #earth-6 .orbit .pos,
+  #earth-6 .orbit-1a {
+    animation-duration: 2s; }
+  #earth-6 .orbit-1b {
+    animation-duration: 2s; }
+  #earth-6 .orbit-1c {
+    animation-duration: 2s; }
+  #earth-6 .orbit-1d {
+    animation-duration: 2s; }
+  #earth-6 .orbit-1e {
+    animation-duration: 2s; }
+  #earth-6 .orbit-1f {
+    animation-duration: 2s; }
+  #earth-6 .orbit-1g {
+    animation-duration: 2s; }
+  #earth-6 .orbit-1h {
+    animation-duration: 2s; }
+
+  #earth-6 .orbit .pos,
+  #earth-6 .orbit-2a {
+    animation-duration: 2.5s; }
+  #earth-6 .orbit-2b {
+    animation-duration: 2.5s; }
+  #earth-6 .orbit-2c {
+    animation-duration: 2.5s; }
+  #earth-6 .orbit-2d {
+    animation-duration: 2.5s; }
+  #earth-6 .orbit-2e {
+    animation-duration: 2.5s; }
+  #earth-6 .orbit-2f {
+    animation-duration: 2.5s; }
+  #earth-6 .orbit-2g {
+    animation-duration: 2.5s; }
+  #earth-6 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #earth-6 .orbit .pos,
+  #earth-6 .orbit-3a {
+    animation-duration: 3s; }
+  #earth-6 .orbit-3b {
+    animation-duration: 3s; }
+  #earth-6 .orbit-3c {
+    animation-duration: 3s; }
+  #earth-6 .orbit-3d {
+    animation-duration: 3s; }
+  #earth-6 .orbit-3e {
+    animation-duration: 3s; }
+  #earth-6 .orbit-3f {
+    animation-duration: 3s; }
+  #earth-6 .orbit-3g {
+    animation-duration: 3s; }
+  #earth-6 .orbit-3h {
+    animation-duration: 3s; }
+
+  #earth-6 .orbit .pos,
+  #earth-6 .orbit-4a {
+    animation-duration: 3.5s; }
+  #earth-6 .orbit-4b {
+    animation-duration: 3.5s; }
+  #earth-6 .orbit-4c {
+    animation-duration: 3.5s; }
+  #earth-6 .orbit-4d {
+    animation-duration: 3.5s; }
+  #earth-6 .orbit-4e {
+    animation-duration: 3.5s; }
+  #earth-6 .orbit-4f {
+    animation-duration: 3.5s; }
+  #earth-6 .orbit-4g {
+    animation-duration: 3.5s; }
+  #earth-6 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #earth-6 .orbit .pos,
+  #earth-6 .orbit-5a {
+    animation-duration: 4s; }
+  #earth-6 .orbit-5b {
+    animation-duration: 4s; }
+  #earth-6 .orbit-5c {
+    animation-duration: 4s; }
+  #earth-6 .orbit-5d {
+    animation-duration: 4s; }
+  #earth-6 .orbit-5e {
+    animation-duration: 4s; }
+  #earth-6 .orbit-5f {
+    animation-duration: 4s; }
+  #earth-6 .orbit-5g {
+    animation-duration: 4s; }
+  #earth-6 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-6 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-6 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-6 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-6 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-6 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-6 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-6 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-6 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-6 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-6 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-6 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-6 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-6 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-6 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-6 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-6 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-6 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-6 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-6 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-6 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-6 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-6 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-6 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-6 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-6 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-6 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-6 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-6 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-6 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-6 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-6 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-6 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-6 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-6 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-6 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-6 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-6 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-6 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-6 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-6 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #earth-6 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #earth-6 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #earth-6 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #earth-6 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #earth-6 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #earth-6 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #earth-6 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #earth-6 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#earth-6 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-6 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-6 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-6 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-6 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-6 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-6 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-6 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#earth-6 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-6 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-6 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-6 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-6 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-6 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-6 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-6 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#earth-6 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-6 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-6 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-6 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-6 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-6 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-6 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-6 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#earth-6 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-6 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-6 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-6 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-6 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-6 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-6 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-6 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 7 ----------------- */
+
+/* ## ----------------- SOUTHEAST ------------------  */
+
+#earth-7 .pos {
+  left: 85%;
+  top: 85%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#earth-7 .pos,
+#earth-7 .planet,
+#earth-7.orbit {
+  animation-duration: 8s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #earth-7.orbit {
+  width: 55em;
+  height: 55em;
+  margin-top: -27.5em;
+  margin-left: -27.5em; }   
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #earth-7 .planet {
+  font-size: 4em; }
+  .scale-stretched #earth-7 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-7 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-7 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-7 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-7 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#earth-7 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAGBQTFRFGDRdAyFNIDxkQld5CCZTIztsJD1lAAAArsblO230dJfgP2vUnLbbbovAOF2vN1GERnb0Un/yW3asWH3PeY+uhKfyYXaVjafNT2WNeJ3zv9f0nrzzX4rzkLHzrcjzbZX0L9IPbAAAAAh0Uk5TfSC49Uv+4wC/XoCAAAACEUlEQVQoz12T2WKrMAxECWDC4n1fZOv//7IiaXp760cOtkaj0fT8nHXe1LLEmJd5/fk4feDGGFPeR0U/5G39H290zXohhJUi+czY9gs/lhytsM4JvvPEebJZsccH3zSldDrX6uhw8jMl/+Y33nKWibdQChhTsDRzXdbm5Y1nla1LYxAwGjsChvPmcb7xGrMVrtemQdPB0ltt6C6Z80p4y164CxpqMMcBZdRWey9O2rg9p5VlIS5ttMGCiGFUgn20xoXP6zQrJd2JAKW83q11tF5Cb9zZPE9btPIcI5AmLKXXEfoIASGchLeJ5eTCKNA7GMReu8HR26AGLqnUxFRyF3U7aqFrpQVjXrXBOJGXKUexl5fgPsgzqjpIV2sAztk4ZZ/2gVBqfb8NJH/QwcC5j1P0KTU0UOttKrUHh8Y2qL/9jcUZAsCrJTwOHYyG3so3XrJNJ7U1Xn4UfWiAW1nrPPllmqk4v1lrRQMarQ2QPKonBNmyLlScGg1Ik6C6QG8XbA3P5NlKI6EonGHoA2gY5BwZVqAAReIeyXNlyvJ9DJpWozcPU8hzJFNsvAf6pIySOooDUBA6tRBCP5OUav4OE1NSXHu9nQ+kn9LiklXbTxSJS7fvt1kAx+Wc9H57/Aty9FImms3Or+uSBOPy+LUGc/RkT6KgO0lVY57/LpHKlEnrvacV+LtE7xVkSuW8bL9W8AvOdz8ZXmQqKAAAAABJRU5ErkJggg==); }  
+  #earth-7 .moon-1 {
+    background-color: white; }
+  #earth-7 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #earth-7 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #earth-7 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #earth-7 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #earth-7 .orbit .pos,
+  #earth-7 .orbit-1a {
+    animation-duration: 2s; }
+  #earth-7 .orbit-1b {
+    animation-duration: 2s; }
+  #earth-7 .orbit-1c {
+    animation-duration: 2s; }
+  #earth-7 .orbit-1d {
+    animation-duration: 2s; }
+  #earth-7 .orbit-1e {
+    animation-duration: 2s; }
+  #earth-7 .orbit-1f {
+    animation-duration: 2s; }
+  #earth-7 .orbit-1g {
+    animation-duration: 2s; }
+  #earth-7 .orbit-1h {
+    animation-duration: 2s; }
+
+  #earth-7 .orbit .pos,
+  #earth-7 .orbit-2a {
+    animation-duration: 2.5s; }
+  #earth-7 .orbit-2b {
+    animation-duration: 2.5s; }
+  #earth-7 .orbit-2c {
+    animation-duration: 2.5s; }
+  #earth-7 .orbit-2d {
+    animation-duration: 2.5s; }
+  #earth-7 .orbit-2e {
+    animation-duration: 2.5s; }
+  #earth-7 .orbit-2f {
+    animation-duration: 2.5s; }
+  #earth-7 .orbit-2g {
+    animation-duration: 2.5s; }
+  #earth-7 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #earth-7 .orbit .pos,
+  #earth-7 .orbit-3a {
+    animation-duration: 3s; }
+  #earth-7 .orbit-3b {
+    animation-duration: 3s; }
+  #earth-7 .orbit-3c {
+    animation-duration: 3s; }
+  #earth-7 .orbit-3d {
+    animation-duration: 3s; }
+  #earth-7 .orbit-3e {
+    animation-duration: 3s; }
+  #earth-7 .orbit-3f {
+    animation-duration: 3s; }
+  #earth-7 .orbit-3g {
+    animation-duration: 3s; }
+  #earth-7 .orbit-3h {
+    animation-duration: 3s; }
+
+  #earth-7 .orbit .pos,
+  #earth-7 .orbit-4a {
+    animation-duration: 3.5s; }
+  #earth-7 .orbit-4b {
+    animation-duration: 3.5s; }
+  #earth-7 .orbit-4c {
+    animation-duration: 3.5s; }
+  #earth-7 .orbit-4d {
+    animation-duration: 3.5s; }
+  #earth-7 .orbit-4e {
+    animation-duration: 3.5s; }
+  #earth-7 .orbit-4f {
+    animation-duration: 3.5s; }
+  #earth-7 .orbit-4g {
+    animation-duration: 3.5s; }
+  #earth-7 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #earth-7 .orbit .pos,
+  #earth-7 .orbit-5a {
+    animation-duration: 4s; }
+  #earth-7 .orbit-5b {
+    animation-duration: 4s; }
+  #earth-7 .orbit-5c {
+    animation-duration: 4s; }
+  #earth-7 .orbit-5d {
+    animation-duration: 4s; }
+  #earth-7 .orbit-5e {
+    animation-duration: 4s; }
+  #earth-7 .orbit-5f {
+    animation-duration: 4s; }
+  #earth-7 .orbit-5g {
+    animation-duration: 4s; }
+  #earth-7 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-7 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-7 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-7 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-7 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-7 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-7 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-7 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-7 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-7 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-7 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-7 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-7 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-7 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-7 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-7 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-7 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-7 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-7 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-7 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-7 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-7 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-7 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-7 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-7 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-7 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-7 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-7 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-7 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-7 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-7 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-7 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-7 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-7 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-7 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-7 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-7 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-7 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-7 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-7 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-7 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #earth-7 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #earth-7 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #earth-7 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #earth-7 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #earth-7 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #earth-7 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #earth-7 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #earth-7 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#earth-7 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-7 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-7 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-7 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-7 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-7 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-7 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-7 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#earth-7 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-7 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-7 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-7 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-7 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-7 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-7 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-7 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#earth-7 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-7 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-7 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-7 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-7 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-7 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-7 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-7 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#earth-7 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-7 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-7 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-7 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-7 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-7 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-7 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-7 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 8 ----------------- */
+
+/* ## ----------------- NORTHWEST ------------------  */
+
+#earth-8 .pos {
+  left: 15%;
+  top: 15%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#earth-8 .pos,
+#earth-8 .planet,
+#earth-8.orbit {
+  animation-duration: 8s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #earth-8.orbit {
+  width: 55em;
+  height: 55em;
+  margin-top: -27.5em;
+  margin-left: -27.5em; }   
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #earth-8 .planet {
+  font-size: 4em; }
+  .scale-stretched #earth-8 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-8 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-8 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-8 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #earth-8 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#earth-8 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAAGBQTFRFGDRdAyFNIDxkQld5CCZTIztsJD1lAAAArsblO230dJfgP2vUnLbbbovAOF2vN1GERnb0Un/yW3asWH3PeY+uhKfyYXaVjafNT2WNeJ3zv9f0nrzzX4rzkLHzrcjzbZX0L9IPbAAAAAh0Uk5TfSC49Uv+4wC/XoCAAAACEUlEQVQoz12T2WKrMAxECWDC4n1fZOv//7IiaXp760cOtkaj0fT8nHXe1LLEmJd5/fk4feDGGFPeR0U/5G39H290zXohhJUi+czY9gs/lhytsM4JvvPEebJZsccH3zSldDrX6uhw8jMl/+Y33nKWibdQChhTsDRzXdbm5Y1nla1LYxAwGjsChvPmcb7xGrMVrtemQdPB0ltt6C6Z80p4y164CxpqMMcBZdRWey9O2rg9p5VlIS5ttMGCiGFUgn20xoXP6zQrJd2JAKW83q11tF5Cb9zZPE9btPIcI5AmLKXXEfoIASGchLeJ5eTCKNA7GMReu8HR26AGLqnUxFRyF3U7aqFrpQVjXrXBOJGXKUexl5fgPsgzqjpIV2sAztk4ZZ/2gVBqfb8NJH/QwcC5j1P0KTU0UOttKrUHh8Y2qL/9jcUZAsCrJTwOHYyG3so3XrJNJ7U1Xn4UfWiAW1nrPPllmqk4v1lrRQMarQ2QPKonBNmyLlScGg1Ik6C6QG8XbA3P5NlKI6EonGHoA2gY5BwZVqAAReIeyXNlyvJ9DJpWozcPU8hzJFNsvAf6pIySOooDUBA6tRBCP5OUav4OE1NSXHu9nQ+kn9LiklXbTxSJS7fvt1kAx+Wc9H57/Aty9FImms3Or+uSBOPy+LUGc/RkT6KgO0lVY57/LpHKlEnrvacV+LtE7xVkSuW8bL9W8AvOdz8ZXmQqKAAAAABJRU5ErkJggg==); }  
+  #earth-8 .moon-1 {
+    background-color: white; }
+  #earth-8 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #earth-8 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #earth-8 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #earth-8 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #earth-8 .orbit .pos,
+  #earth-8 .orbit-1a {
+    animation-duration: 2s; }
+  #earth-8 .orbit-1b {
+    animation-duration: 2s; }
+  #earth-8 .orbit-1c {
+    animation-duration: 2s; }
+  #earth-8 .orbit-1d {
+    animation-duration: 2s; }
+  #earth-8 .orbit-1e {
+    animation-duration: 2s; }
+  #earth-8 .orbit-1f {
+    animation-duration: 2s; }
+  #earth-8 .orbit-1g {
+    animation-duration: 2s; }
+  #earth-8 .orbit-1h {
+    animation-duration: 2s; }
+
+  #earth-8 .orbit .pos,
+  #earth-8 .orbit-2a {
+    animation-duration: 2.5s; }
+  #earth-8 .orbit-2b {
+    animation-duration: 2.5s; }
+  #earth-8 .orbit-2c {
+    animation-duration: 2.5s; }
+  #earth-8 .orbit-2d {
+    animation-duration: 2.5s; }
+  #earth-8 .orbit-2e {
+    animation-duration: 2.5s; }
+  #earth-8 .orbit-2f {
+    animation-duration: 2.5s; }
+  #earth-8 .orbit-2g {
+    animation-duration: 2.5s; }
+  #earth-8 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #earth-8 .orbit .pos,
+  #earth-8 .orbit-3a {
+    animation-duration: 3s; }
+  #earth-8 .orbit-3b {
+    animation-duration: 3s; }
+  #earth-8 .orbit-3c {
+    animation-duration: 3s; }
+  #earth-8 .orbit-3d {
+    animation-duration: 3s; }
+  #earth-8 .orbit-3e {
+    animation-duration: 3s; }
+  #earth-8 .orbit-3f {
+    animation-duration: 3s; }
+  #earth-8 .orbit-3g {
+    animation-duration: 3s; }
+  #earth-8 .orbit-3h {
+    animation-duration: 3s; }
+
+  #earth-8 .orbit .pos,
+  #earth-8 .orbit-4a {
+    animation-duration: 3.5s; }
+  #earth-8 .orbit-4b {
+    animation-duration: 3.5s; }
+  #earth-8 .orbit-4c {
+    animation-duration: 3.5s; }
+  #earth-8 .orbit-4d {
+    animation-duration: 3.5s; }
+  #earth-8 .orbit-4e {
+    animation-duration: 3.5s; }
+  #earth-8 .orbit-4f {
+    animation-duration: 3.5s; }
+  #earth-8 .orbit-4g {
+    animation-duration: 3.5s; }
+  #earth-8 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #earth-8 .orbit .pos,
+  #earth-8 .orbit-5a {
+    animation-duration: 4s; }
+  #earth-8 .orbit-5b {
+    animation-duration: 4s; }
+  #earth-8 .orbit-5c {
+    animation-duration: 4s; }
+  #earth-8 .orbit-5d {
+    animation-duration: 4s; }
+  #earth-8 .orbit-5e {
+    animation-duration: 4s; }
+  #earth-8 .orbit-5f {
+    animation-duration: 4s; }
+  #earth-8 .orbit-5g {
+    animation-duration: 4s; }
+  #earth-8 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-8 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-8 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-8 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-8 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-8 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-8 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-8 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #earth-8 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-8 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-8 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-8 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-8 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-8 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-8 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-8 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #earth-8 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-8 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-8 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-8 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-8 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-8 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-8 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-8 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #earth-8 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-8 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-8 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-8 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-8 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-8 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-8 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-8 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #earth-8 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #earth-8 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-8 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-8 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-8 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-8 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-8 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-8 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #earth-8 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #earth-8 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #earth-8 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #earth-8 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #earth-8 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #earth-8 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #earth-8 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #earth-8 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #earth-8 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#earth-8 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-8 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-8 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-8 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-8 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-8 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-8 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-8 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#earth-8 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-8 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-8 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-8 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-8 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-8 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-8 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-8 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#earth-8 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-8 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-8 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-8 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-8 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-8 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-8 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-8 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#earth-8 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #earth-8 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #earth-8 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #earth-8 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #earth-8 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #earth-8 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #earth-8 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #earth-8 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
 
 /* !! PRIORITY 2 ---------------------------------------------------------------------*/
 /* !! PRIORITY 2 ---------------------------------------------------------------------*/
@@ -2672,6 +5639,2982 @@ body {
 
 /* $$-------------------------------------------------------------------------------- */
 
+/* $$  ---------------- TASK 3 ----------------- */
+
+/* ## ----------------- NORTH ------------------  */
+
+#mars-3 .pos {
+  left: 50%;
+  top: 100%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#mars-3 .pos,
+#mars-3 .planet,
+#mars-3.orbit {
+  animation-duration: 12s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #mars-3.orbit {
+  width: 95em;
+  height: 95em;
+  margin-top: -47.5em;
+  margin-left: -47.5em; }  
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #mars-3 .planet {
+  font-size: 4em; }
+  .scale-stretched #mars-3 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-3 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-3 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-3 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-3 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#mars-3 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFsW89lWA2jVwzsm8+qGo72oVJrW08h1gxlWA15IpMrW09jlw0l2E2nGM3v3ZC3YdK3odKyHtE75BP8JFQ8JFQ8JFQ8JFQ8JFQw3hD8JFQ8JFQ8JFQ8JFQ8JFQ8JFQAAAAe3ooYQAAACB0Uk5Tk0+hrcTz6g7P5tkiYurz49bk79XR3vvm2PH26ezi2QCQ4vSgAAABm0lEQVQoz1VSWXaEMAzLLAw7ZHMSx0vvf8uaTtvX+icQYSRbch/vGrf7ftV0v43fV+59bNP+Oo6jtXAs0/YHWg1o4TxnqyG05bn+QOt0AUIRKWVV39qyvqF1f4VTFSqiZgWuerarz6D7KwyoqkI19k5UFYfjeUHbdJzEkLQS9cLCSELDsX24cVoCVYYMHXsphQk0Aw2v0W17OCv2CPwFIWnSBDAfmzOmSt0KmZhj1ZwERLU5N72GwsyIREwCKZtIsAe/uL3NpapW42ciMTWitXI8g9uDj/aCAEZoaqRHtf8ZmduPFAtW1kz2BWntXQRUo0FhTrVcKxLTZmNbi7Fd0NR8Vhsz5x6jZMHIrJrS3Nx98WAQ5lyJsXdGGxs0eeduS5Brs1+y2dZRe0EBajc3LuaHEKRks8qFIYrC0EZb79KM31qUbCO9l44mJWyXKY9mbMnkJzAeo0Ni/3hb+WynqDGkDJHNa/Okrd8BWJpPag1gHpdO5vL6G5tnC15rRBaI6sNj/Ru25Wjez3E+LTTbvxxaRB/PdtVj+4noJ91nOp3NTB6wAAAAAElFTkSuQmCC); } 
+  #mars-3 .moon-1 {
+    background-color: white; }
+  #mars-3 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #mars-3 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #mars-3 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #mars-3 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #mars-3 .orbit .pos,
+  #mars-3 .orbit-1a {
+    animation-duration: 2s; }
+  #mars-3 .orbit-1b {
+    animation-duration: 2s; }
+  #mars-3 .orbit-1c {
+    animation-duration: 2s; }
+  #mars-3 .orbit-1d {
+    animation-duration: 2s; }
+  #mars-3 .orbit-1e {
+    animation-duration: 2s; }
+  #mars-3 .orbit-1f {
+    animation-duration: 2s; }
+  #mars-3 .orbit-1g {
+    animation-duration: 2s; }
+  #mars-3 .orbit-1h {
+    animation-duration: 2s; }
+
+  #mars-3 .orbit .pos,
+  #mars-3 .orbit-2a {
+    animation-duration: 2.5s; }
+  #mars-3 .orbit-2b {
+    animation-duration: 2.5s; }
+  #mars-3 .orbit-2c {
+    animation-duration: 2.5s; }
+  #mars-3 .orbit-2d {
+    animation-duration: 2.5s; }
+  #mars-3 .orbit-2e {
+    animation-duration: 2.5s; }
+  #mars-3 .orbit-2f {
+    animation-duration: 2.5s; }
+  #mars-3 .orbit-2g {
+    animation-duration: 2.5s; }
+  #mars-3 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #mars-3 .orbit .pos,
+  #mars-3 .orbit-3a {
+    animation-duration: 3s; }
+  #mars-3 .orbit-3b {
+    animation-duration: 3s; }
+  #mars-3 .orbit-3c {
+    animation-duration: 3s; }
+  #mars-3 .orbit-3d {
+    animation-duration: 3s; }
+  #mars-3 .orbit-3e {
+    animation-duration: 3s; }
+  #mars-3 .orbit-3f {
+    animation-duration: 3s; }
+  #mars-3 .orbit-3g {
+    animation-duration: 3s; }
+  #mars-3 .orbit-3h {
+    animation-duration: 3s; }
+
+  #mars-3 .orbit .pos,
+  #mars-3 .orbit-4a {
+    animation-duration: 3.5s; }
+  #mars-3 .orbit-4b {
+    animation-duration: 3.5s; }
+  #mars-3 .orbit-4c {
+    animation-duration: 3.5s; }
+  #mars-3 .orbit-4d {
+    animation-duration: 3.5s; }
+  #mars-3 .orbit-4e {
+    animation-duration: 3.5s; }
+  #mars-3 .orbit-4f {
+    animation-duration: 3.5s; }
+  #mars-3 .orbit-4g {
+    animation-duration: 3.5s; }
+  #mars-3 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #mars-3 .orbit .pos,
+  #mars-3 .orbit-5a {
+    animation-duration: 4s; }
+  #mars-3 .orbit-5b {
+    animation-duration: 4s; }
+  #mars-3 .orbit-5c {
+    animation-duration: 4s; }
+  #mars-3 .orbit-5d {
+    animation-duration: 4s; }
+  #mars-3 .orbit-5e {
+    animation-duration: 4s; }
+  #mars-3 .orbit-5f {
+    animation-duration: 4s; }
+  #mars-3 .orbit-5g {
+    animation-duration: 4s; }
+  #mars-3 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-3 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-3 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-3 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-3 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-3 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-3 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-3 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-3 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-3 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-3 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-3 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-3 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-3 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-3 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-3 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-3 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-3 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-3 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-3 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-3 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-3 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-3 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-3 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-3 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-3 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-3 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-3 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-3 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-3 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-3 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-3 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-3 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-3 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-3 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-3 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-3 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-3 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-3 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-3 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-3 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #mars-3 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #mars-3 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #mars-3 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #mars-3 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #mars-3 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #mars-3 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #mars-3 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #mars-3 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#mars-3 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-3 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-3 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-3 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-3 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-3 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-3 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-3 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#mars-3 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-3 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-3 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-3 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-3 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-3 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-3 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-3 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#mars-3 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-3 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-3 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-3 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-3 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-3 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-3 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-3 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#mars-3 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-3 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-3 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-3 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-3 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-3 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-3 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-3 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 4 ----------------- */
+
+/* ## ----------------- SOUTH ------------------  */
+
+#mars-4 .pos {
+  left: 50%;
+  top: 0%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#mars-4 .pos,
+#mars-4 .planet,
+#mars-4.orbit {
+  animation-duration: 12s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #mars-4.orbit {
+  width: 95em;
+  height: 95em;
+  margin-top: -47.5em;
+  margin-left: -47.5em; }  
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #mars-4 .planet {
+  font-size: 4em; }
+  .scale-stretched #mars-4 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-4 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-4 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-4 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-4 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#mars-4 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFsW89lWA2jVwzsm8+qGo72oVJrW08h1gxlWA15IpMrW09jlw0l2E2nGM3v3ZC3YdK3odKyHtE75BP8JFQ8JFQ8JFQ8JFQ8JFQw3hD8JFQ8JFQ8JFQ8JFQ8JFQ8JFQAAAAe3ooYQAAACB0Uk5Tk0+hrcTz6g7P5tkiYurz49bk79XR3vvm2PH26ezi2QCQ4vSgAAABm0lEQVQoz1VSWXaEMAzLLAw7ZHMSx0vvf8uaTtvX+icQYSRbch/vGrf7ftV0v43fV+59bNP+Oo6jtXAs0/YHWg1o4TxnqyG05bn+QOt0AUIRKWVV39qyvqF1f4VTFSqiZgWuerarz6D7KwyoqkI19k5UFYfjeUHbdJzEkLQS9cLCSELDsX24cVoCVYYMHXsphQk0Aw2v0W17OCv2CPwFIWnSBDAfmzOmSt0KmZhj1ZwERLU5N72GwsyIREwCKZtIsAe/uL3NpapW42ciMTWitXI8g9uDj/aCAEZoaqRHtf8ZmduPFAtW1kz2BWntXQRUo0FhTrVcKxLTZmNbi7Fd0NR8Vhsz5x6jZMHIrJrS3Nx98WAQ5lyJsXdGGxs0eeduS5Brs1+y2dZRe0EBajc3LuaHEKRks8qFIYrC0EZb79KM31qUbCO9l44mJWyXKY9mbMnkJzAeo0Ni/3hb+WynqDGkDJHNa/Okrd8BWJpPag1gHpdO5vL6G5tnC15rRBaI6sNj/Ru25Wjez3E+LTTbvxxaRB/PdtVj+4noJ91nOp3NTB6wAAAAAElFTkSuQmCC); } 
+  #mars-4 .moon-1 {
+    background-color: white; }
+  #mars-4 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #mars-4 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #mars-4 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #mars-4 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #mars-4 .orbit .pos,
+  #mars-4 .orbit-1a {
+    animation-duration: 2s; }
+  #mars-4 .orbit-1b {
+    animation-duration: 2s; }
+  #mars-4 .orbit-1c {
+    animation-duration: 2s; }
+  #mars-4 .orbit-1d {
+    animation-duration: 2s; }
+  #mars-4 .orbit-1e {
+    animation-duration: 2s; }
+  #mars-4 .orbit-1f {
+    animation-duration: 2s; }
+  #mars-4 .orbit-1g {
+    animation-duration: 2s; }
+  #mars-4 .orbit-1h {
+    animation-duration: 2s; }
+
+  #mars-4 .orbit .pos,
+  #mars-4 .orbit-2a {
+    animation-duration: 2.5s; }
+  #mars-4 .orbit-2b {
+    animation-duration: 2.5s; }
+  #mars-4 .orbit-2c {
+    animation-duration: 2.5s; }
+  #mars-4 .orbit-2d {
+    animation-duration: 2.5s; }
+  #mars-4 .orbit-2e {
+    animation-duration: 2.5s; }
+  #mars-4 .orbit-2f {
+    animation-duration: 2.5s; }
+  #mars-4 .orbit-2g {
+    animation-duration: 2.5s; }
+  #mars-4 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #mars-4 .orbit .pos,
+  #mars-4 .orbit-3a {
+    animation-duration: 3s; }
+  #mars-4 .orbit-3b {
+    animation-duration: 3s; }
+  #mars-4 .orbit-3c {
+    animation-duration: 3s; }
+  #mars-4 .orbit-3d {
+    animation-duration: 3s; }
+  #mars-4 .orbit-3e {
+    animation-duration: 3s; }
+  #mars-4 .orbit-3f {
+    animation-duration: 3s; }
+  #mars-4 .orbit-3g {
+    animation-duration: 3s; }
+  #mars-4 .orbit-3h {
+    animation-duration: 3s; }
+
+  #mars-4 .orbit .pos,
+  #mars-4 .orbit-4a {
+    animation-duration: 3.5s; }
+  #mars-4 .orbit-4b {
+    animation-duration: 3.5s; }
+  #mars-4 .orbit-4c {
+    animation-duration: 3.5s; }
+  #mars-4 .orbit-4d {
+    animation-duration: 3.5s; }
+  #mars-4 .orbit-4e {
+    animation-duration: 3.5s; }
+  #mars-4 .orbit-4f {
+    animation-duration: 3.5s; }
+  #mars-4 .orbit-4g {
+    animation-duration: 3.5s; }
+  #mars-4 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #mars-4 .orbit .pos,
+  #mars-4 .orbit-5a {
+    animation-duration: 4s; }
+  #mars-4 .orbit-5b {
+    animation-duration: 4s; }
+  #mars-4 .orbit-5c {
+    animation-duration: 4s; }
+  #mars-4 .orbit-5d {
+    animation-duration: 4s; }
+  #mars-4 .orbit-5e {
+    animation-duration: 4s; }
+  #mars-4 .orbit-5f {
+    animation-duration: 4s; }
+  #mars-4 .orbit-5g {
+    animation-duration: 4s; }
+  #mars-4 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-4 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-4 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-4 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-4 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-4 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-4 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-4 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-4 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-4 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-4 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-4 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-4 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-4 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-4 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-4 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-4 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-4 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-4 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-4 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-4 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-4 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-4 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-4 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-4 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-4 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-4 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-4 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-4 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-4 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-4 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-4 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-4 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-4 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-4 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-4 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-4 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-4 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-4 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-4 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-4 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #mars-4 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #mars-4 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #mars-4 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #mars-4 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #mars-4 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #mars-4 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #mars-4 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #mars-4 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#mars-4 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-4 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-4 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-4 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-4 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-4 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-4 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-4 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#mars-4 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-4 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-4 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-4 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-4 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-4 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-4 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-4 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#mars-4 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-4 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-4 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-4 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-4 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-4 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-4 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-4 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#mars-4 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-4 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-4 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-4 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-4 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-4 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-4 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-4 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+
+/* $$  ---------------- TASK 5 ----------------- */
+
+/* ## ----------------- SOUTHWEST ------------------  */
+
+#mars-5 .pos {
+  left: 85%;
+  top: 15%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#mars-5 .pos,
+#mars-5 .planet,
+#mars-5.orbit {
+  animation-duration: 12s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #mars-5.orbit {
+  width: 95em;
+  height: 95em;
+  margin-top: -47.5em;
+  margin-left: -47.5em; }  
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #mars-5 .planet {
+  font-size: 4em; }
+  .scale-stretched #mars-5 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-5 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-5 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-5 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-5 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#mars-5 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFsW89lWA2jVwzsm8+qGo72oVJrW08h1gxlWA15IpMrW09jlw0l2E2nGM3v3ZC3YdK3odKyHtE75BP8JFQ8JFQ8JFQ8JFQ8JFQw3hD8JFQ8JFQ8JFQ8JFQ8JFQ8JFQAAAAe3ooYQAAACB0Uk5Tk0+hrcTz6g7P5tkiYurz49bk79XR3vvm2PH26ezi2QCQ4vSgAAABm0lEQVQoz1VSWXaEMAzLLAw7ZHMSx0vvf8uaTtvX+icQYSRbch/vGrf7ftV0v43fV+59bNP+Oo6jtXAs0/YHWg1o4TxnqyG05bn+QOt0AUIRKWVV39qyvqF1f4VTFSqiZgWuerarz6D7KwyoqkI19k5UFYfjeUHbdJzEkLQS9cLCSELDsX24cVoCVYYMHXsphQk0Aw2v0W17OCv2CPwFIWnSBDAfmzOmSt0KmZhj1ZwERLU5N72GwsyIREwCKZtIsAe/uL3NpapW42ciMTWitXI8g9uDj/aCAEZoaqRHtf8ZmduPFAtW1kz2BWntXQRUo0FhTrVcKxLTZmNbi7Fd0NR8Vhsz5x6jZMHIrJrS3Nx98WAQ5lyJsXdGGxs0eeduS5Brs1+y2dZRe0EBajc3LuaHEKRks8qFIYrC0EZb79KM31qUbCO9l44mJWyXKY9mbMnkJzAeo0Ni/3hb+WynqDGkDJHNa/Okrd8BWJpPag1gHpdO5vL6G5tnC15rRBaI6sNj/Ru25Wjez3E+LTTbvxxaRB/PdtVj+4noJ91nOp3NTB6wAAAAAElFTkSuQmCC); } 
+  #mars-5 .moon-1 {
+    background-color: white; }
+  #mars-5 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #mars-5 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #mars-5 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #mars-5 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #mars-5 .orbit .pos,
+  #mars-5 .orbit-1a {
+    animation-duration: 2s; }
+  #mars-5 .orbit-1b {
+    animation-duration: 2s; }
+  #mars-5 .orbit-1c {
+    animation-duration: 2s; }
+  #mars-5 .orbit-1d {
+    animation-duration: 2s; }
+  #mars-5 .orbit-1e {
+    animation-duration: 2s; }
+  #mars-5 .orbit-1f {
+    animation-duration: 2s; }
+  #mars-5 .orbit-1g {
+    animation-duration: 2s; }
+  #mars-5 .orbit-1h {
+    animation-duration: 2s; }
+
+  #mars-5 .orbit .pos,
+  #mars-5 .orbit-2a {
+    animation-duration: 2.5s; }
+  #mars-5 .orbit-2b {
+    animation-duration: 2.5s; }
+  #mars-5 .orbit-2c {
+    animation-duration: 2.5s; }
+  #mars-5 .orbit-2d {
+    animation-duration: 2.5s; }
+  #mars-5 .orbit-2e {
+    animation-duration: 2.5s; }
+  #mars-5 .orbit-2f {
+    animation-duration: 2.5s; }
+  #mars-5 .orbit-2g {
+    animation-duration: 2.5s; }
+  #mars-5 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #mars-5 .orbit .pos,
+  #mars-5 .orbit-3a {
+    animation-duration: 3s; }
+  #mars-5 .orbit-3b {
+    animation-duration: 3s; }
+  #mars-5 .orbit-3c {
+    animation-duration: 3s; }
+  #mars-5 .orbit-3d {
+    animation-duration: 3s; }
+  #mars-5 .orbit-3e {
+    animation-duration: 3s; }
+  #mars-5 .orbit-3f {
+    animation-duration: 3s; }
+  #mars-5 .orbit-3g {
+    animation-duration: 3s; }
+  #mars-5 .orbit-3h {
+    animation-duration: 3s; }
+
+  #mars-5 .orbit .pos,
+  #mars-5 .orbit-4a {
+    animation-duration: 3.5s; }
+  #mars-5 .orbit-4b {
+    animation-duration: 3.5s; }
+  #mars-5 .orbit-4c {
+    animation-duration: 3.5s; }
+  #mars-5 .orbit-4d {
+    animation-duration: 3.5s; }
+  #mars-5 .orbit-4e {
+    animation-duration: 3.5s; }
+  #mars-5 .orbit-4f {
+    animation-duration: 3.5s; }
+  #mars-5 .orbit-4g {
+    animation-duration: 3.5s; }
+  #mars-5 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #mars-5 .orbit .pos,
+  #mars-5 .orbit-5a {
+    animation-duration: 4s; }
+  #mars-5 .orbit-5b {
+    animation-duration: 4s; }
+  #mars-5 .orbit-5c {
+    animation-duration: 4s; }
+  #mars-5 .orbit-5d {
+    animation-duration: 4s; }
+  #mars-5 .orbit-5e {
+    animation-duration: 4s; }
+  #mars-5 .orbit-5f {
+    animation-duration: 4s; }
+  #mars-5 .orbit-5g {
+    animation-duration: 4s; }
+  #mars-5 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-5 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-5 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-5 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-5 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-5 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-5 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-5 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-5 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-5 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-5 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-5 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-5 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-5 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-5 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-5 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-5 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-5 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-5 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-5 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-5 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-5 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-5 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-5 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-5 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-5 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-5 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-5 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-5 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-5 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-5 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-5 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-5 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-5 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-5 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-5 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-5 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-5 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-5 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-5 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-5 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #mars-5 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #mars-5 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #mars-5 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #mars-5 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #mars-5 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #mars-5 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #mars-5 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #mars-5 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#mars-5 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-5 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-5 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-5 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-5 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-5 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-5 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-5 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#mars-5 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-5 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-5 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-5 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-5 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-5 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-5 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-5 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#mars-5 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-5 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-5 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-5 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-5 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-5 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-5 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-5 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#mars-5 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-5 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-5 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-5 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-5 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-5 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-5 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-5 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 6 ----------------- */
+
+/* ## ----------------- NORTHEAST ------------------  */
+
+#mars-6 .pos {
+  left: 15%;
+  top: 85%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#mars-6 .pos,
+#mars-6 .planet,
+#mars-6.orbit {
+  animation-duration: 12s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #mars-6.orbit {
+  width: 95em;
+  height: 95em;
+  margin-top: -47.5em;
+  margin-left: -47.5em; }  
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #mars-6 .planet {
+  font-size: 4em; }
+  .scale-stretched #mars-6 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-6 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-6 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-6 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-6 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#mars-6 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFsW89lWA2jVwzsm8+qGo72oVJrW08h1gxlWA15IpMrW09jlw0l2E2nGM3v3ZC3YdK3odKyHtE75BP8JFQ8JFQ8JFQ8JFQ8JFQw3hD8JFQ8JFQ8JFQ8JFQ8JFQ8JFQAAAAe3ooYQAAACB0Uk5Tk0+hrcTz6g7P5tkiYurz49bk79XR3vvm2PH26ezi2QCQ4vSgAAABm0lEQVQoz1VSWXaEMAzLLAw7ZHMSx0vvf8uaTtvX+icQYSRbch/vGrf7ftV0v43fV+59bNP+Oo6jtXAs0/YHWg1o4TxnqyG05bn+QOt0AUIRKWVV39qyvqF1f4VTFSqiZgWuerarz6D7KwyoqkI19k5UFYfjeUHbdJzEkLQS9cLCSELDsX24cVoCVYYMHXsphQk0Aw2v0W17OCv2CPwFIWnSBDAfmzOmSt0KmZhj1ZwERLU5N72GwsyIREwCKZtIsAe/uL3NpapW42ciMTWitXI8g9uDj/aCAEZoaqRHtf8ZmduPFAtW1kz2BWntXQRUo0FhTrVcKxLTZmNbi7Fd0NR8Vhsz5x6jZMHIrJrS3Nx98WAQ5lyJsXdGGxs0eeduS5Brs1+y2dZRe0EBajc3LuaHEKRks8qFIYrC0EZb79KM31qUbCO9l44mJWyXKY9mbMnkJzAeo0Ni/3hb+WynqDGkDJHNa/Okrd8BWJpPag1gHpdO5vL6G5tnC15rRBaI6sNj/Ru25Wjez3E+LTTbvxxaRB/PdtVj+4noJ91nOp3NTB6wAAAAAElFTkSuQmCC); } 
+  #mars-6 .moon-1 {
+    background-color: white; }
+  #mars-6 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #mars-6 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #mars-6 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #mars-6 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #mars-6 .orbit .pos,
+  #mars-6 .orbit-1a {
+    animation-duration: 2s; }
+  #mars-6 .orbit-1b {
+    animation-duration: 2s; }
+  #mars-6 .orbit-1c {
+    animation-duration: 2s; }
+  #mars-6 .orbit-1d {
+    animation-duration: 2s; }
+  #mars-6 .orbit-1e {
+    animation-duration: 2s; }
+  #mars-6 .orbit-1f {
+    animation-duration: 2s; }
+  #mars-6 .orbit-1g {
+    animation-duration: 2s; }
+  #mars-6 .orbit-1h {
+    animation-duration: 2s; }
+
+  #mars-6 .orbit .pos,
+  #mars-6 .orbit-2a {
+    animation-duration: 2.5s; }
+  #mars-6 .orbit-2b {
+    animation-duration: 2.5s; }
+  #mars-6 .orbit-2c {
+    animation-duration: 2.5s; }
+  #mars-6 .orbit-2d {
+    animation-duration: 2.5s; }
+  #mars-6 .orbit-2e {
+    animation-duration: 2.5s; }
+  #mars-6 .orbit-2f {
+    animation-duration: 2.5s; }
+  #mars-6 .orbit-2g {
+    animation-duration: 2.5s; }
+  #mars-6 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #mars-6 .orbit .pos,
+  #mars-6 .orbit-3a {
+    animation-duration: 3s; }
+  #mars-6 .orbit-3b {
+    animation-duration: 3s; }
+  #mars-6 .orbit-3c {
+    animation-duration: 3s; }
+  #mars-6 .orbit-3d {
+    animation-duration: 3s; }
+  #mars-6 .orbit-3e {
+    animation-duration: 3s; }
+  #mars-6 .orbit-3f {
+    animation-duration: 3s; }
+  #mars-6 .orbit-3g {
+    animation-duration: 3s; }
+  #mars-6 .orbit-3h {
+    animation-duration: 3s; }
+
+  #mars-6 .orbit .pos,
+  #mars-6 .orbit-4a {
+    animation-duration: 3.5s; }
+  #mars-6 .orbit-4b {
+    animation-duration: 3.5s; }
+  #mars-6 .orbit-4c {
+    animation-duration: 3.5s; }
+  #mars-6 .orbit-4d {
+    animation-duration: 3.5s; }
+  #mars-6 .orbit-4e {
+    animation-duration: 3.5s; }
+  #mars-6 .orbit-4f {
+    animation-duration: 3.5s; }
+  #mars-6 .orbit-4g {
+    animation-duration: 3.5s; }
+  #mars-6 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #mars-6 .orbit .pos,
+  #mars-6 .orbit-5a {
+    animation-duration: 4s; }
+  #mars-6 .orbit-5b {
+    animation-duration: 4s; }
+  #mars-6 .orbit-5c {
+    animation-duration: 4s; }
+  #mars-6 .orbit-5d {
+    animation-duration: 4s; }
+  #mars-6 .orbit-5e {
+    animation-duration: 4s; }
+  #mars-6 .orbit-5f {
+    animation-duration: 4s; }
+  #mars-6 .orbit-5g {
+    animation-duration: 4s; }
+  #mars-6 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-6 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-6 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-6 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-6 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-6 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-6 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-6 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-6 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-6 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-6 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-6 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-6 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-6 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-6 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-6 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-6 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-6 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-6 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-6 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-6 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-6 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-6 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-6 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-6 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-6 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-6 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-6 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-6 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-6 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-6 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-6 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-6 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-6 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-6 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-6 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-6 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-6 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-6 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-6 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-6 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #mars-6 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #mars-6 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #mars-6 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #mars-6 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #mars-6 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #mars-6 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #mars-6 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #mars-6 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#mars-6 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-6 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-6 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-6 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-6 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-6 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-6 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-6 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#mars-6 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-6 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-6 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-6 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-6 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-6 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-6 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-6 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#mars-6 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-6 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-6 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-6 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-6 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-6 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-6 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-6 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#mars-6 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-6 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-6 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-6 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-6 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-6 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-6 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-6 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 7 ----------------- */
+
+/* ## ----------------- SOUTHEAST ------------------  */
+
+#mars-7 .pos {
+  left: 85%;
+  top: 85%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#mars-7 .pos,
+#mars-7 .planet,
+#mars-7.orbit {
+  animation-duration: 12s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #mars-7.orbit {
+  width: 95em;
+  height: 95em;
+  margin-top: -47.5em;
+  margin-left: -47.5em; }  
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #mars-7 .planet {
+  font-size: 4em; }
+  .scale-stretched #mars-7 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-7 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-7 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-7 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-7 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#mars-7 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFsW89lWA2jVwzsm8+qGo72oVJrW08h1gxlWA15IpMrW09jlw0l2E2nGM3v3ZC3YdK3odKyHtE75BP8JFQ8JFQ8JFQ8JFQ8JFQw3hD8JFQ8JFQ8JFQ8JFQ8JFQ8JFQAAAAe3ooYQAAACB0Uk5Tk0+hrcTz6g7P5tkiYurz49bk79XR3vvm2PH26ezi2QCQ4vSgAAABm0lEQVQoz1VSWXaEMAzLLAw7ZHMSx0vvf8uaTtvX+icQYSRbch/vGrf7ftV0v43fV+59bNP+Oo6jtXAs0/YHWg1o4TxnqyG05bn+QOt0AUIRKWVV39qyvqF1f4VTFSqiZgWuerarz6D7KwyoqkI19k5UFYfjeUHbdJzEkLQS9cLCSELDsX24cVoCVYYMHXsphQk0Aw2v0W17OCv2CPwFIWnSBDAfmzOmSt0KmZhj1ZwERLU5N72GwsyIREwCKZtIsAe/uL3NpapW42ciMTWitXI8g9uDj/aCAEZoaqRHtf8ZmduPFAtW1kz2BWntXQRUo0FhTrVcKxLTZmNbi7Fd0NR8Vhsz5x6jZMHIrJrS3Nx98WAQ5lyJsXdGGxs0eeduS5Brs1+y2dZRe0EBajc3LuaHEKRks8qFIYrC0EZb79KM31qUbCO9l44mJWyXKY9mbMnkJzAeo0Ni/3hb+WynqDGkDJHNa/Okrd8BWJpPag1gHpdO5vL6G5tnC15rRBaI6sNj/Ru25Wjez3E+LTTbvxxaRB/PdtVj+4noJ91nOp3NTB6wAAAAAElFTkSuQmCC); } 
+  #mars-7 .moon-1 {
+    background-color: white; }
+  #mars-7 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #mars-7 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #mars-7 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #mars-7 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #mars-7 .orbit .pos,
+  #mars-7 .orbit-1a {
+    animation-duration: 2s; }
+  #mars-7 .orbit-1b {
+    animation-duration: 2s; }
+  #mars-7 .orbit-1c {
+    animation-duration: 2s; }
+  #mars-7 .orbit-1d {
+    animation-duration: 2s; }
+  #mars-7 .orbit-1e {
+    animation-duration: 2s; }
+  #mars-7 .orbit-1f {
+    animation-duration: 2s; }
+  #mars-7 .orbit-1g {
+    animation-duration: 2s; }
+  #mars-7 .orbit-1h {
+    animation-duration: 2s; }
+
+  #mars-7 .orbit .pos,
+  #mars-7 .orbit-2a {
+    animation-duration: 2.5s; }
+  #mars-7 .orbit-2b {
+    animation-duration: 2.5s; }
+  #mars-7 .orbit-2c {
+    animation-duration: 2.5s; }
+  #mars-7 .orbit-2d {
+    animation-duration: 2.5s; }
+  #mars-7 .orbit-2e {
+    animation-duration: 2.5s; }
+  #mars-7 .orbit-2f {
+    animation-duration: 2.5s; }
+  #mars-7 .orbit-2g {
+    animation-duration: 2.5s; }
+  #mars-7 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #mars-7 .orbit .pos,
+  #mars-7 .orbit-3a {
+    animation-duration: 3s; }
+  #mars-7 .orbit-3b {
+    animation-duration: 3s; }
+  #mars-7 .orbit-3c {
+    animation-duration: 3s; }
+  #mars-7 .orbit-3d {
+    animation-duration: 3s; }
+  #mars-7 .orbit-3e {
+    animation-duration: 3s; }
+  #mars-7 .orbit-3f {
+    animation-duration: 3s; }
+  #mars-7 .orbit-3g {
+    animation-duration: 3s; }
+  #mars-7 .orbit-3h {
+    animation-duration: 3s; }
+
+  #mars-7 .orbit .pos,
+  #mars-7 .orbit-4a {
+    animation-duration: 3.5s; }
+  #mars-7 .orbit-4b {
+    animation-duration: 3.5s; }
+  #mars-7 .orbit-4c {
+    animation-duration: 3.5s; }
+  #mars-7 .orbit-4d {
+    animation-duration: 3.5s; }
+  #mars-7 .orbit-4e {
+    animation-duration: 3.5s; }
+  #mars-7 .orbit-4f {
+    animation-duration: 3.5s; }
+  #mars-7 .orbit-4g {
+    animation-duration: 3.5s; }
+  #mars-7 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #mars-7 .orbit .pos,
+  #mars-7 .orbit-5a {
+    animation-duration: 4s; }
+  #mars-7 .orbit-5b {
+    animation-duration: 4s; }
+  #mars-7 .orbit-5c {
+    animation-duration: 4s; }
+  #mars-7 .orbit-5d {
+    animation-duration: 4s; }
+  #mars-7 .orbit-5e {
+    animation-duration: 4s; }
+  #mars-7 .orbit-5f {
+    animation-duration: 4s; }
+  #mars-7 .orbit-5g {
+    animation-duration: 4s; }
+  #mars-7 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-7 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-7 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-7 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-7 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-7 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-7 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-7 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-7 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-7 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-7 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-7 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-7 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-7 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-7 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-7 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-7 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-7 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-7 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-7 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-7 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-7 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-7 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-7 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-7 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-7 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-7 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-7 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-7 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-7 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-7 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-7 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-7 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-7 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-7 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-7 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-7 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-7 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-7 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-7 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-7 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #mars-7 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #mars-7 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #mars-7 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #mars-7 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #mars-7 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #mars-7 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #mars-7 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #mars-7 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#mars-7 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-7 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-7 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-7 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-7 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-7 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-7 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-7 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#mars-7 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-7 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-7 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-7 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-7 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-7 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-7 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-7 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#mars-7 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-7 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-7 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-7 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-7 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-7 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-7 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-7 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#mars-7 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-7 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-7 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-7 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-7 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-7 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-7 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-7 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
+
+/* $$  ---------------- TASK 8 ----------------- */
+
+/* ## ----------------- NORTHWEST ------------------  */
+
+#mars-8 .pos {
+  left: 15%;
+  top: 15%; }
+
+/* @@ --------------ORBIT SPEED---------------- */
+
+#mars-8 .pos,
+#mars-8 .planet,
+#mars-8.orbit {
+  animation-duration: 12s; }
+
+/* @@ --------------ORBIT SCALE---------------- */
+
+.scale-stretched #mars-8.orbit {
+  width: 95em;
+  height: 95em;
+  margin-top: -47.5em;
+  margin-left: -47.5em; }  
+
+/* @@ --------PLANET + MOON SCALE-------------- */
+
+.scale-stretched #mars-8 .planet {
+  font-size: 4em; }
+  .scale-stretched #mars-8 .moon-1 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-8 .moon-2 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-8 .moon-3 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-8 .moon-4 {
+    font-size: 1.2em; }
+  .scale-stretched #mars-8 .moon-5 {
+    font-size: 1.2em; }
+
+/* ## -------- IMAGES and COLORS -------------- */
+    
+#mars-8 .planet {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFsW89lWA2jVwzsm8+qGo72oVJrW08h1gxlWA15IpMrW09jlw0l2E2nGM3v3ZC3YdK3odKyHtE75BP8JFQ8JFQ8JFQ8JFQ8JFQw3hD8JFQ8JFQ8JFQ8JFQ8JFQ8JFQAAAAe3ooYQAAACB0Uk5Tk0+hrcTz6g7P5tkiYurz49bk79XR3vvm2PH26ezi2QCQ4vSgAAABm0lEQVQoz1VSWXaEMAzLLAw7ZHMSx0vvf8uaTtvX+icQYSRbch/vGrf7ftV0v43fV+59bNP+Oo6jtXAs0/YHWg1o4TxnqyG05bn+QOt0AUIRKWVV39qyvqF1f4VTFSqiZgWuerarz6D7KwyoqkI19k5UFYfjeUHbdJzEkLQS9cLCSELDsX24cVoCVYYMHXsphQk0Aw2v0W17OCv2CPwFIWnSBDAfmzOmSt0KmZhj1ZwERLU5N72GwsyIREwCKZtIsAe/uL3NpapW42ciMTWitXI8g9uDj/aCAEZoaqRHtf8ZmduPFAtW1kz2BWntXQRUo0FhTrVcKxLTZmNbi7Fd0NR8Vhsz5x6jZMHIrJrS3Nx98WAQ5lyJsXdGGxs0eeduS5Brs1+y2dZRe0EBajc3LuaHEKRks8qFIYrC0EZb79KM31qUbCO9l44mJWyXKY9mbMnkJzAeo0Ni/3hb+WynqDGkDJHNa/Okrd8BWJpPag1gHpdO5vL6G5tnC15rRBaI6sNj/Ru25Wjez3E+LTTbvxxaRB/PdtVj+4noJ91nOp3NTB6wAAAAAElFTkSuQmCC); } 
+  #mars-8 .moon-1 {
+    background-color: white; }
+  #mars-8 .moon-2 {
+    background-color: rgb(225, 115, 115); }
+  #mars-8 .moon-3 {
+    background-color: rgb(115, 124, 225); }
+  #mars-8 .moon-4 {
+    background-color: rgb(225, 210, 115); }
+  #mars-8 .moon-5 {
+    background-color: rgb(141, 225, 115); }
+
+/* $$  ---------------------------------------- */
+
+  #mars-8 .orbit .pos,
+  #mars-8 .orbit-1a {
+    animation-duration: 2s; }
+  #mars-8 .orbit-1b {
+    animation-duration: 2s; }
+  #mars-8 .orbit-1c {
+    animation-duration: 2s; }
+  #mars-8 .orbit-1d {
+    animation-duration: 2s; }
+  #mars-8 .orbit-1e {
+    animation-duration: 2s; }
+  #mars-8 .orbit-1f {
+    animation-duration: 2s; }
+  #mars-8 .orbit-1g {
+    animation-duration: 2s; }
+  #mars-8 .orbit-1h {
+    animation-duration: 2s; }
+
+  #mars-8 .orbit .pos,
+  #mars-8 .orbit-2a {
+    animation-duration: 2.5s; }
+  #mars-8 .orbit-2b {
+    animation-duration: 2.5s; }
+  #mars-8 .orbit-2c {
+    animation-duration: 2.5s; }
+  #mars-8 .orbit-2d {
+    animation-duration: 2.5s; }
+  #mars-8 .orbit-2e {
+    animation-duration: 2.5s; }
+  #mars-8 .orbit-2f {
+    animation-duration: 2.5s; }
+  #mars-8 .orbit-2g {
+    animation-duration: 2.5s; }
+  #mars-8 .orbit-2h {
+    animation-duration: 2.5s; }
+
+  #mars-8 .orbit .pos,
+  #mars-8 .orbit-3a {
+    animation-duration: 3s; }
+  #mars-8 .orbit-3b {
+    animation-duration: 3s; }
+  #mars-8 .orbit-3c {
+    animation-duration: 3s; }
+  #mars-8 .orbit-3d {
+    animation-duration: 3s; }
+  #mars-8 .orbit-3e {
+    animation-duration: 3s; }
+  #mars-8 .orbit-3f {
+    animation-duration: 3s; }
+  #mars-8 .orbit-3g {
+    animation-duration: 3s; }
+  #mars-8 .orbit-3h {
+    animation-duration: 3s; }
+
+  #mars-8 .orbit .pos,
+  #mars-8 .orbit-4a {
+    animation-duration: 3.5s; }
+  #mars-8 .orbit-4b {
+    animation-duration: 3.5s; }
+  #mars-8 .orbit-4c {
+    animation-duration: 3.5s; }
+  #mars-8 .orbit-4d {
+    animation-duration: 3.5s; }
+  #mars-8 .orbit-4e {
+    animation-duration: 3.5s; }
+  #mars-8 .orbit-4f {
+    animation-duration: 3.5s; }
+  #mars-8 .orbit-4g {
+    animation-duration: 3.5s; }
+  #mars-8 .orbit-4h {
+    animation-duration: 3.5s; }
+
+  #mars-8 .orbit .pos,
+  #mars-8 .orbit-5a {
+    animation-duration: 4s; }
+  #mars-8 .orbit-5b {
+    animation-duration: 4s; }
+  #mars-8 .orbit-5c {
+    animation-duration: 4s; }
+  #mars-8 .orbit-5d {
+    animation-duration: 4s; }
+  #mars-8 .orbit-5e {
+    animation-duration: 4s; }
+  #mars-8 .orbit-5f {
+    animation-duration: 4s; }
+  #mars-8 .orbit-5g {
+    animation-duration: 4s; }
+  #mars-8 .orbit-5h {
+    animation-duration: 4s; }  
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-8 .orbit-1a {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-8 .orbit-1b {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-8 .orbit-1c {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-8 .orbit-1d {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-8 .orbit-1e {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-8 .orbit-1f {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-8 .orbit-1g {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+.scale-stretched #mars-8 .orbit-1h {
+  width: 8em;
+  height: 8em;
+  margin-top: -4em;
+  margin-left: -4em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-8 .orbit-2a {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-8 .orbit-2b {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-8 .orbit-2c {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-8 .orbit-2d {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-8 .orbit-2e {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-8 .orbit-2f {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-8 .orbit-2g {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+.scale-stretched #mars-8 .orbit-2h {
+  width: 11em;
+  height: 11em;
+  margin-top: -5.5em;
+  margin-left: -5.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-8 .orbit-3a {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-8 .orbit-3b {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-8 .orbit-3c {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-8 .orbit-3d {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-8 .orbit-3e {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-8 .orbit-3f {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-8 .orbit-3g {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+.scale-stretched #mars-8 .orbit-3h {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-8 .orbit-4a {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-8 .orbit-4b {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-8 .orbit-4c {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-8 .orbit-4d {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-8 .orbit-4e {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-8 .orbit-4f {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-8 .orbit-4g {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+.scale-stretched #mars-8 .orbit-4h {
+  width: 17em;
+  height: 17em;
+  margin-top: -8.5em;
+  margin-left: -8.5em; }
+
+/* $$  ---------------------------------------- */
+
+.scale-stretched #mars-8 .orbit-5a {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-8 .orbit-5b {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-8 .orbit-5c {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-8 .orbit-5d {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-8 .orbit-5e {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-8 .orbit-5f {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-8 .orbit-5g {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+.scale-stretched #mars-8 .orbit-5h {
+  width: 20em;
+  height: 20em;
+  margin-top: -10em;
+  margin-left: -10em; }
+
+/* @@ -------------- suborbit 1 -------------- */
+
+  #mars-8 .orbit-1a .pos {
+    left: 100%;
+    top: 50%; }
+    #mars-8 .orbit-1b .pos {
+      left: 0%;
+      top: 50%; }
+      #mars-8 .orbit-1c .pos {
+        left: 50%;
+        top: 100%; }
+        #mars-8 .orbit-1d .pos {
+          left: 50%;
+          top: 0%; }
+          #mars-8 .orbit-1e .pos {
+            left: 85%;
+            top: 15%; }
+            #mars-8 .orbit-1f .pos {
+              left: 15%;
+              top: 85%; }
+              #mars-8 .orbit-1g .pos {
+                left: 85%;
+                top: 85%; }
+                #mars-8 .orbit-1h .pos {
+                  left: 15%;
+                  top: 15%; }
+
+/* @@ -------------- suborbit 2 -------------- */
+
+#mars-8 .orbit-2a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-8 .orbit-2b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-8 .orbit-2c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-8 .orbit-2d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-8 .orbit-2e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-8 .orbit-2f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-8 .orbit-2g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-8 .orbit-2h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 3 -------------- */
+
+#mars-8 .orbit-3a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-8 .orbit-3b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-8 .orbit-3c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-8 .orbit-3d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-8 .orbit-3e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-8 .orbit-3f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-8 .orbit-3g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-8 .orbit-3h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 4 -------------- */
+
+#mars-8 .orbit-4a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-8 .orbit-4b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-8 .orbit-4c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-8 .orbit-4d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-8 .orbit-4e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-8 .orbit-4f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-8 .orbit-4g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-8 .orbit-4h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* @@ -------------- suborbit 5 -------------- */
+#mars-8 .orbit-5a .pos {
+  left: 100%;
+  top: 50%; }
+  #mars-8 .orbit-5b .pos {
+    left: 0%;
+    top: 50%; }
+    #mars-8 .orbit-5c .pos {
+      left: 50%;
+      top: 100%; }
+      #mars-8 .orbit-5d .pos {
+        left: 50%;
+        top: 0%; }
+        #mars-8 .orbit-5e .pos {
+          left: 85%;
+          top: 15%; }
+          #mars-8 .orbit-5f .pos {
+            left: 15%;
+            top: 85%; }
+            #mars-8 .orbit-5g .pos {
+              left: 85%;
+              top: 85%; }
+              #mars-8 .orbit-5h .pos {
+                left: 15%;
+                top: 15%; }
+
+/* $$-------------------------------------------------------------------------------- */
 
 /* !! PRIORITY 3 ---------------------------------------------------------------------*/
 /* !! PRIORITY 3 ---------------------------------------------------------------------*/
