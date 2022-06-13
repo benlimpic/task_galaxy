@@ -249,7 +249,7 @@ function GalaxyBuild() {
                     </div>
                 </div>
 
-{/*
+
 
                 <div id="earth-2" className="orbit">
                     <div className="pos">
@@ -1807,7 +1807,7 @@ function GalaxyBuild() {
                 </div> 
                 
 
- */}
+ 
 
 
 
@@ -2033,7 +2033,7 @@ function GalaxyBuild() {
                     </div>
                 </div>
 
-{/*
+
 
                 <div id="mars-2" className="orbit">
                     <div className="pos">
@@ -3589,7 +3589,7 @@ function GalaxyBuild() {
                     </div>
                 </div> 
 
-*/}
+
 
 
 
@@ -3815,7 +3815,7 @@ function GalaxyBuild() {
                     </div>
                 </div>
 
-{/* 
+
 
                 <div id="jupiter-2" className="orbit">
                     <div className="pos">
@@ -5371,7 +5371,7 @@ function GalaxyBuild() {
                     </div>
                 </div> 
 
-*/}
+
 
 
 
@@ -5598,7 +5598,7 @@ function GalaxyBuild() {
                     </div>
                 </div>
 
-{/* 
+
 
                 <div id="saturn-2" className="orbit">
                     <div className="pos">
@@ -7154,7 +7154,7 @@ function GalaxyBuild() {
                     </div>
                 </div> 
                 
-*/}
+
 
 
 
@@ -7380,7 +7380,7 @@ function GalaxyBuild() {
                     </div>
                 </div>
 
-{/* 
+
 
                 <div id="uranus-2" className="orbit">
                     <div className="pos">
@@ -8935,7 +8935,7 @@ function GalaxyBuild() {
                         <div className="planet"></div>
                     </div>
                 </div> 
-                */}
+                
 
 
             </div>
