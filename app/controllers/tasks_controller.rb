@@ -2,7 +2,7 @@
 class TasksController < ApplicationController
 
     def index
-      render json: Task.where(user_id: session[:user_id]), includes: :project
+      render json: Task.where(project_id: params[:project_id])
     end
   
     def create
