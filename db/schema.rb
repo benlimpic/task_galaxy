@@ -19,7 +19,8 @@ ActiveRecord::Schema.define(version: 2022_06_07_173503) do
     t.string "title"
     t.text "description"
     t.text "notes"
-    t.string "color"
+    t.string "status"
+    t.string "priority"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -32,8 +33,6 @@ ActiveRecord::Schema.define(version: 2022_06_07_173503) do
     t.text "notes"
     t.string "status"
     t.string "priority"
-    t.datetime "due_date"
-    t.string "color"
     t.bigint "task_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -46,8 +45,6 @@ ActiveRecord::Schema.define(version: 2022_06_07_173503) do
     t.text "notes"
     t.string "status"
     t.string "priority"
-    t.datetime "due_date"
-    t.string "color"
     t.bigint "project_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

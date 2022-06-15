@@ -6,8 +6,6 @@ class CreateTasks < ActiveRecord::Migration[6.1]
       t.text :notes
       t.string :status
       t.string :priority
-      t.datetime :due_date
-      t.string :color
 
       t.belongs_to :project, null: false, foreign_key: true
 

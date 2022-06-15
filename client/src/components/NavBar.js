@@ -13,39 +13,14 @@ function NavBar({ user, setUser }) {
     });
   }
 
-  const [isShow, setIsShow] = React.useState(false);
-  const [isMinus, setIsMinus] = React.useState(false);
-
   return (
     <div className="navbar">
     <Wrapper>
       <Logo >
         <Link to="/" onClick={() => {
-          setIsMinus(false) 
-          setIsShow(false)}}>Task Galaxy</Link>
+          }}>Task Galaxy</Link>
       </Logo>
       <Nav>
-        
-        {/* {isShow ? <Button onClick={() => setIsShow(!isShow)} as={Link} to='/create-project' >New Project</Button> : null}
-        {isShow ? <Button as={Link} to='/create' onClick={() => setIsShow(!isShow)} >New Task</Button> : null}
-        {!isMinus ? <Button onClick={() => {
-          setIsMinus(!isMinus)
-          setIsShow(false)}}>
-
-            <FaGhost icon="flipper" size="1.5em" className="flipper" color="goldenrod"/>
-            
-            </Button> : null}
-
-
-        {isMinus ? <Button as={Link} to='/delete-project' onClick={() => setIsMinus(!isMinus)}>Delete Project</Button> : null}
-        {isMinus ? <Button as={Link} to='/delete-task' onClick={() => setIsMinus(!isMinus)}>Delete Task</Button> : null}
-        {!isShow ? <Button onClick={() => {
-          setIsShow(!isShow)
-          setIsMinus(false)}}>
-
-            <FaPlus icon="flipper" size="1.5em" className="flipper" color="goldenrod"/>
-            
-            </Button> : null} */}
         <Button variant="fill" onClick={handleLogoutClick}>
           Logout
         </Button>

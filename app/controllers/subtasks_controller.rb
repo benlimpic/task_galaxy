@@ -1,32 +1,32 @@
 class SubtasksController < ApplicationController
 
     def index
-        render json: Subtask.all
+      render json: Subtask.where(user_id: session[:user_id]), includes: :task
     end
-    
+  
     def create
-        subtask = Subtask.create!(subtask_params)
-        render json: subtask, status: :created
+      Subtask = Subtask.create!(Subtask_params)
+      
+      render json: Subtask, status: :created
+  
     end
-    
+  
     def update
-        subtask = Subtask.find_by(id: params[:id])
-        subtask.update(subtask_params)
-        render json: subtask
+      Subtask = Subtask.find_by(id: params[:id])
+      Subtask.update(Subtask_params)
+      render json: Subtask
     end
-    
+  
     def destroy
-        subtask = Subtask.find_by(id: params[:id])
-        subtask.destroy
-        head :no_content
+      Subtask = Subtask.find_by(id: params[:id])
+      Subtask.destroy
+      render json: {}
     end
-
     private
     
-    def subtask_params
-        params.permit(:title, :description, :notes, :status, :priority, :due_date, :color, :project_id)
-    end
-
+    def Subtask_params
+        params.permit(:title, :description, :notes, :status, :priority, :task_id)
+    end    
 end
 
 

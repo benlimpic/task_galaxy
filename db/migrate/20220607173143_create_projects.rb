@@ -4,7 +4,8 @@ class CreateProjects < ActiveRecord::Migration[6.1]
       t.string :title
       t.text :description
       t.text :notes
-      t.string :color
+      t.string :status
+      t.string :priority
 
       t.belongs_to :user, null: false, foreign_key: true
 
