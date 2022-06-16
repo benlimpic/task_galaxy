@@ -1,8 +1,8 @@
 
 class TasksController < ApplicationController
 
-    def index
-      render json: Task.where(project_id: params[:project_id])
+    def show
+      render json: Task.where(project_id: params[:id])
     end
   
     def create
