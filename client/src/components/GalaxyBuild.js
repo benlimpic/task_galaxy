@@ -1,10 +1,11 @@
 import {React} from 'react';
 import "./Galaxy.css";
+import $ from "jquery";
 
 
 function GalaxyBuild() {
 
-    var body = ("body")
+    var body = $("body")
 
     var init = function() {
         body.addClass("view-2D").delay(2000)

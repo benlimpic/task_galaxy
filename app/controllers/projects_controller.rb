@@ -5,6 +5,11 @@ class ProjectsController < ApplicationController
     render json: Project.where(user_id: session[:user_id])
     end
 
+    def show
+    project = Project.where(user_id: session[:user_id])
+    render json: project.find(params[:id])
+    end
+
     def create
     project = Project.create!(project_params)
     render json: project, status: :created

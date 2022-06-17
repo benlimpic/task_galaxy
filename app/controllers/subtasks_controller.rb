@@ -4,6 +4,11 @@ class SubtasksController < ApplicationController
       render json: Subtask.where(task_id: params[:task_id])
     end
   
+    def show
+      subtask = Subtask.where(task_id: params[:task_id])
+      render json: subtask.find(params[:id])
+    end
+
     def create
       subtask = Subtask.create!(subtask_params)
       

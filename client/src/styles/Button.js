@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const COLORS = {
   primary: {
-    "--main": "black",
-    "--accent": "goldenrod",
+    "--main": "goldenrod",
+    "--accent": "black",
   },
   secondary: {
     "--main": "goldenrod",
@@ -37,7 +37,7 @@ const FillButton = styled(ButtonBase)`
   color: var(--accent);
 
   &:hover {
-    opacity: 1;
+    opacity: .7;
   }
 `;
 
