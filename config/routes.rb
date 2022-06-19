@@ -2,10 +2,10 @@ Rails.application.routes.draw do
   
   resources :users
   resources :projects do
-      resources :tasks do
-          resources :subtasks
-      end
+    resources :tasks do
+      resources :subtasks
     end
+  end
   
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 

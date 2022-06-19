@@ -3,49 +3,47 @@ import { Button, Error, Input, FormField, Label, Select, Textarea } from "../sty
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
-const CreateTask = ({ project, tasks, setTasks, task, setTask }) => {
+const CreateTask = ({ project, tasks, setTasks }) => {
     
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [notes, setNotes] = useState('');
     const [status, setStatus] = useState('');
     const [priority, setPriority] = useState('');
-    const [errors, setErrors] = useState([]);
-
+    // const [errors, setErrors] = useState([]);
+    
 
 
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
     e.preventDefault()
-    const project = { 
+    const task = { 
         title, 
         description, 
         notes,
         status, 
         priority,
-        project_id: project.id,
+        project_id: project.id
     };
 
-    fetch('/projects', {
+    fetch(`/projects/${project}/tasks`, {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(project)
+        body: JSON.stringify(task)
         })
         .then(r => { r.json().then(data => navigate('/')); })
     }   
         
     useEffect(() => {
-        fetch('/tasks')
+        fetch(`/projects/${project}/tasks`)
         .then(r => r.json())
         .then(data => {
-          setTasks(data)}
+        setTasks(data)}
         )
-      }, [])
-    
-      
-    const taskOptions = tasks.map(task => {
-      return <option key={task.id} value={task.id}>{task.title}</option>})
+    }, [project])
+
+
 
     return (
         <div>
@@ -102,11 +100,11 @@ const CreateTask = ({ project, tasks, setTasks, task, setTask }) => {
                 </Link>
             </FormField>
             
-            <FormField>
+            {/* <FormField>
             {errors.map((err) => (
                 <Error key={err}>{err}</Error>
             ))}
-            </FormField>
+            </FormField> */}
         </form>
         </div>
     )

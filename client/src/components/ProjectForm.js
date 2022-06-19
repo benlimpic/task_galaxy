@@ -3,15 +3,15 @@ import { Button, Error, Input, FormField, Label, Select, Textarea } from "../sty
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
-const CreateProject = ({ user }) => {
+const CreateProject = ({ user, setProjects }) => {
     
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [notes, setNotes] = useState('');
     const [status, setStatus] = useState('');
     const [priority, setPriority] = useState('');
-    const [errors, setErrors] = useState([]);
-    const [projects, setProjects] = useState([]);
+    // const [errors, setErrors] = useState([]);
+    
 
 
     const navigate = useNavigate();
@@ -42,6 +42,7 @@ const CreateProject = ({ user }) => {
         setProjects(data)}
         )
     }, [])
+
 
 
     return (
@@ -99,11 +100,11 @@ const CreateProject = ({ user }) => {
                 </Link>
             </FormField>
             
-            <FormField>
+            {/* <FormField>
             {errors.map((err) => (
                 <Error key={err}>{err}</Error>
             ))}
-            </FormField>
+            </FormField> */}
         </form>
         </div>
     )
