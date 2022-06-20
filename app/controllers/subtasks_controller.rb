@@ -29,7 +29,7 @@ class SubtasksController < ApplicationController
     end
     private
     
-    def Subtask_params
+    def subtask_params
         params.permit(:title, :description, :notes, :status, :priority, :task_id)
     end    
 end

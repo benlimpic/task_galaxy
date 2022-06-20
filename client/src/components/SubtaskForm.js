@@ -40,7 +40,7 @@ const CreateSubtask = ({ project, task, setSubtasks, subtask }) => {
         .then(data => {
         setSubtasks(data)}
         )
-    }, [task])
+    }, [subtask])
 
     return (
         <div>
