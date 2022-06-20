@@ -1,6 +1,7 @@
 .AllSelect {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   padding: 10px;
 }
 
@@ -9,5 +10,6 @@
 .AddSelect {
   display: flex;
   flex-direction: row;
+  align-self: flex-start;
   padding: 10px;
 }

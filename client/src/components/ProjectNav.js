@@ -28,7 +28,8 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
         .then(data => {
         setSubtasks(data)}
         )
-    }, [task])
+    }, [project, task])
+
 
     const projectOptions = projects.map(project => {
     return <option key={project.id} value={project.id}>{project.title}</option>})
@@ -43,8 +44,8 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
         
         <div className="AllSelect">
             <div className="AddSelect">
-                <Button as={Link} to='./new-project'>+</Button>
-                <FormField>
+                <Button as={Link} to='./new-project'><FaPlus/></Button>
+                <FormField onChange={(e) => setTask(0)}>
                     <Select value={project} onChange={(e) => setProject(e.target.value)}>
                         <option value={0}>Select Project</option>
                         {projectOptions}
@@ -52,8 +53,8 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
                 </FormField>
             </div>
             <div className="AddSelect">
-                <Button as={Link} to='./new-task'>+</Button>
-                <FormField>
+                <Button as={Link} to='./new-task'><FaPlus/></Button>
+                <FormField onChange={(e) =>setSubtask(0)}>
                     <Select value={task} onChange={(e) => setTask(e.target.value)}>
                         <option value={0}>Select Task</option>
                         {taskOptions}
@@ -61,7 +62,7 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
                 </FormField>            
             </div>
             <div className="AddSelect">
-                <Button as={Link} to='./new-subtask'>+</Button>
+                <Button as={Link} to='./new-subtask'><FaPlus/></Button>
                 <FormField>
                     <Select value={subtask} onChange={(e) => setSubtask(e.target.value)}>
                         <option value={0}>Select Sub-Task</option>
