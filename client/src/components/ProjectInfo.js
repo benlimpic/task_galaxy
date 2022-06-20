@@ -13,7 +13,7 @@ const ProjectInfo = ({ project, task, subtask }) => {
         .then(data => {
         setProjectInfo(data)}
         )
-    }, [project])
+    }, [setProjectInfo, project])
 
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const ProjectInfo = ({ project, task, subtask }) => {
         .then(data => {
         setTaskInfo(data)}
         )
-    }, [task])
+    }, [setTaskInfo, project, task])
 
     useEffect(() => {
         fetch(`/projects/${project}/tasks/${task}/subtasks/${subtask}`)
@@ -30,7 +30,7 @@ const ProjectInfo = ({ project, task, subtask }) => {
         .then(data => {
         setSubtaskInfo(data)}
         )
-    }, [subtask])
+    }, [setSubtaskInfo, project, task, subtask])
     
 
     

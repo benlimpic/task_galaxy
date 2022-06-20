@@ -12,7 +12,7 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
         .then(data => {
         setProjects(data)}
         )
-    }, [])
+    }, [setProjects])
 
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
         .then(data => {
         setTasks(data)}
         )
-    }, [project])
+    }, [setTasks, project])
 
 
     useEffect(() => {
@@ -30,7 +30,7 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
         .then(data => {
         setSubtasks(data)}
         )
-    }, [task])
+    }, [setSubtasks, project, task])
 
 
     console.log("project")
