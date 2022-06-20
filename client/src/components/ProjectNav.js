@@ -14,6 +14,7 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
         )
     }, [])
 
+
     useEffect(() => {
         fetch(`/projects/${project}/tasks`)
         .then(r => r.json())
@@ -22,14 +23,22 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
         )
     }, [project])
 
+
     useEffect(() => {
         fetch(`/projects/${project}/tasks/${task}/subtasks`)
         .then(r => r.json())
         .then(data => {
         setSubtasks(data)}
         )
-    }, [project, task])
+    }, [task])
 
+
+    console.log("project")
+    console.log(project)
+    console.log("task")
+    console.log(task)
+    console.log("subtask")
+    console.log(subtask)
 
     const projectOptions = projects.map(project => {
     return <option key={project.id} value={project.id}>{project.title}</option>})

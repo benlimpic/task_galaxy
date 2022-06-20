@@ -1,6 +1,7 @@
 import React from 'react'
 import GalaxyBuild from '../components/GalaxyBuild'
 import ProjectNav from '../components/ProjectNav'
+import ProjectInfo from '../components/ProjectInfo'
 
 
 const Home = ( {projects, setProjects, project, setProject, tasks, setTasks, task, setTask, subtasks, setSubtasks, subtask, setSubtask} ) => {
@@ -22,7 +23,13 @@ const Home = ( {projects, setProjects, project, setProject, tasks, setTasks, tas
           setSubtask={setSubtask}
           />
         <GalaxyBuild 
-          project={project}/>
+          project={project}
+        />
+        <ProjectInfo
+          project={project}
+          task={task}
+          subtask={subtask}
+        />
     </div>
   )
 }
