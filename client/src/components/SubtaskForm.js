@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Button, Error, Input, FormField, Label, Select, Textarea } from "../styles";
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import './projectForm.css'
 
 const CreateSubtask = ({ project, task, setSubtasks, subtask }) => {
     
@@ -43,7 +44,7 @@ const CreateSubtask = ({ project, task, setSubtasks, subtask }) => {
     }, [subtask])
 
     return (
-        <div>
+        <div className="Form">
         <h1>Create A New Sub-Task</h1>
         <form onSubmit={handleSubmit}>
             <FormField>

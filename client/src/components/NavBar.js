@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles";
+import { FaSignInAlt } from "react-icons/fa";
 import '../App.css';
 
 function NavBar({ user, setUser }) {
@@ -22,7 +23,7 @@ function NavBar({ user, setUser }) {
       </Logo>
       <Nav>
         <Button variant="fill" onClick={handleLogoutClick}>
-          Logout
+          <FaSignInAlt/>
         </Button>
       </Nav>
     </Wrapper>

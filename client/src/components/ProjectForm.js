@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Button, Error, Input, FormField, Label, Select, Textarea } from "../styles";
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import './projectForm.css'
 
 const CreateProject = ({ user, setProjects }) => {
     
@@ -46,7 +47,7 @@ const CreateProject = ({ user, setProjects }) => {
 
 
     return (
-        <div>
+        <div className="Form">
         <h1>Create A New Project</h1>
         <form onSubmit={handleSubmit}>
             <FormField>

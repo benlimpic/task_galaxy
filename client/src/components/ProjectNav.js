@@ -50,7 +50,7 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
     return <option key={subtask.id} value={subtask.id}>{subtask.title}</option>})
 
     return (
-        
+        <>
         <div className="AllSelect">
             <div className="AddSelect">
                 <Button as={Link} to='./new-project'><FaPlus/></Button>
@@ -80,6 +80,8 @@ const ProjectNav = ({projects, setProjects, project, setProject, tasks, setTasks
                 </FormField>
             </div>
         </div>
+        </>
+
         
     )
 }

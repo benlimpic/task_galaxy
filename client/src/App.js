@@ -54,6 +54,9 @@ function App() {
         subtask={subtask}
         setSubtask={setSubtask}
         />} />
+        {/* <Route path="/edit-project" element={<ProjectForm project={project}/>}/>
+        <Route path="/edit-task/" element={<TaskForm task={task}/>}/>
+        <Route path="/edit-subtask/" element={<SubtaskForm subtask={subtask}/>}/> */}
         <Route path="/new-project" element={<ProjectForm user={user} setProjects={setProjects}/>}/>
         <Route path="/new-task" element={<TaskForm project={project} setTasks={setTasks}/>}/>
         <Route path="/new-subtask" element={<SubtaskForm project={project} task={task} setSubtasks={setSubtasks}/>}/>
