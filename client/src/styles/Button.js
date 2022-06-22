@@ -27,7 +27,7 @@ const ButtonBase = styled.button`
   font-size: 1rem;
   border: 1px solid transparent;
   border-radius: 6px;
-  padding: 1rem;
+  padding: .25rem;
   text-decoration: none;
   margin-right: 10px;
 `;

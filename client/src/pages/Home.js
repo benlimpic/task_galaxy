@@ -9,26 +9,35 @@ const Home = ( {projects, setProjects, project, setProject, tasks, setTasks, tas
 
   return (
     <>
-      <div className="Home">
-          <ProjectNav projects={projects} setProjects={setProjects} project={project} setProject={setProject} tasks={tasks} setTasks={setTasks} task={task} setTask={setTask} subtasks={subtasks} setSubtasks={setSubtasks} subtask={subtask} setSubtask={setSubtask} />
-
-        <div className="Project">
-          <div className="spaceBox2">
+    <div className="Home">
+        <div>
+          <ProjectNav 
+            projects={projects} 
+            setProjects={setProjects} 
+            project={project} 
+            setProject={setProject} 
+            tasks={tasks} 
+            setTasks={setTasks} 
+            task={task} 
+            setTask={setTask} 
+            subtasks={subtasks} 
+            setSubtasks={setSubtasks} 
+            subtask={subtask} 
+            setSubtask={setSubtask} 
+          />
+          <div className="galaxy">
+            <GalaxyBuild />
           </div>
-        <div className="item2">
-          <GalaxyBuild 
-            project={project}/>
         </div>
-          <div className="spaceBox">
-          </div>
-        <div className="item3">
+        <div className="spaceBox">
+        </div>
+        <div className="displayInfo">
           <ProjectInfo
             project={project}
             task={task}
             subtask={subtask}/>
-        </div>
-        </div>
-      </div>
+        </div>  
+    </div>
     </>    
   )
 }

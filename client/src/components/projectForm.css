@@ -4,13 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.665);
-    text-align: center;
-}
