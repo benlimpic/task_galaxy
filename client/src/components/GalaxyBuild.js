@@ -5,21 +5,19 @@ import "./Galaxy.css";
 
 function GalaxyBuild(project) {
 
-const [projectGalaxy, setProjectGalaxy] = useState([])
-const [projectGalaxys, setProjectGalaxys] = useState([])
+// const [projectGalaxy, setProjectGalaxy] = useState([])
+// const [projectGalaxys, setProjectGalaxys] = useState([])
 
     
-    useEffect(() => {
-        fetch(`/projects/`)
-        .then(r => r.json())
-        .then(data => {
-        setProjectGalaxys(data)})
-    }, [setProjectGalaxys])
+//     useEffect(() => {
+//         fetch(`/projects/`)
+//         .then(r => r.json())
+//         .then(data => {
+//         setProjectGalaxys(data)})
+//     }, [setProjectGalaxys, projects])
 
-        projectGalaxys.filter(galaxy => {
-            return (galaxy.project_id === project.id) ? setProjectGalaxy(galaxy) : null})
-    
-        console.log(projectGalaxy)
+//         projectGalaxys.filter(galaxy => {
+//             return (galaxy.project_id === project.id) ? setProjectGalaxy(galaxy) : null})
 
     const init = () => {
         document.body.classList.add("view-2D")
@@ -28,7 +26,7 @@ const [projectGalaxys, setProjectGalaxys] = useState([])
 
     return (
         <>
-                        {projectGalaxy.status !== 500 ?
+            {project.status === 500 ?
                     <div className="galaxy">
                         <h1>{"I cannot believe this worked"}</h1>
                     </div>

@@ -1,14 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import './Info.css'
 import { Button, Error, Input, FormField, Label, Select, Textarea } from "../styles";
-import GalaxyBuild from '../components/GalaxyBuild'
-import {FaRegEdit, FaTrashAlt, FaRegTrashAlt} from 'react-icons/fa'
-
-const ProjectInfo = ({ project, task, subtask}) => {
+import {Link} from 'react-router-dom'
+import {FaRegTrashAlt, FaRegEdit} from 'react-icons/fa'
+const ProjectInfo = ({ project, task, subtask, projectInfo, taskInfo, subtaskInfo, setProjectInfo, setTaskInfo, setSubtaskInfo}) => {
     
-    const [projectInfo, setProjectInfo] = useState([])
-    const [taskInfo, setTaskInfo] = useState([])
-    const [subtaskInfo, setSubtaskInfo] = useState([])
+
 
 
     useEffect(() => {
@@ -39,77 +36,142 @@ const ProjectInfo = ({ project, task, subtask}) => {
     
     return (
         <>
+        
         <div className="DisplayInfo">
             {projectInfo.status !== 500 ?
                     <div className="ProjectInfo">
-                        <h1>{projectInfo.title}</h1>
-                        <div>
-                            <h2>Description: </h2>
-                            <h4>{projectInfo.description}</h4>
-                            <h2>Notes: </h2>
-                            <h4>{projectInfo.notes}</h4>
-                            <h2>Status: </h2>
-                            <h4>{projectInfo.status}</h4>
-                            <h2>Priority: </h2>
-                            <h4>{projectInfo.priority}</h4>
-                        </div>
+                        <h1>Project</h1>
+                        <FormField>
+                            <Label htmlFor="title">Title:</Label>
+                            <Input type="text" required id="title" autoComplete="off" value={projectInfo.title}  />
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="description">Description:</Label>
+                            <Textarea rows="3" type="text"  id="title" autoComplete="off" value={projectInfo.description} />
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="Notes">Notes:</Label>
+                            <Textarea rows="3" type="text"  id="title" autoComplete="off" value={projectInfo.notes}/>
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="status">Status:</Label>
+                            <Select value={projectInfo.status} >
+                                <option value="">{projectInfo.status}</option>
+
+                            </Select>
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="priority">Priority:</Label>
+                            <Select value={projectInfo.priority}>
+                                <option value="">{projectInfo.priority}</option>
+
+                            </Select>
+                        </FormField>
+
                         <div className="FormButtons">
-                            <Button><FaRegEdit/></Button>
-                            <Button><FaRegTrashAlt/></Button>
+                            <button><FaRegEdit/></button>
+                            <button><FaRegTrashAlt/></button>
                         </div>
                     </div>
                 :   <div className="ProjectInfo">
                         <h1>Select A Project</h1>
                     </div>
             }
-        
+        </div>
             
+        <div className="DisplayInfo">
             {taskInfo.status !== 500 ?
                     <div className="TaskInfo">
-                    <h1>{taskInfo.title}</h1>
-                        <div>
-                            <h2>Description: </h2>
-                            <h4>{taskInfo.description}</h4>
-                            <h2>Notes: </h2>
-                            <h4>{taskInfo.notes}</h4>
-                            <h2>Status: </h2>
-                            <h4>{taskInfo.status}</h4>
-                            <h2>Priority: </h2>
-                            <h4>{taskInfo.priority}</h4>
-                        </div>
+                        <h1>Task</h1>
+                        <FormField>
+                            <Label htmlFor="title">Title:</Label>
+                            <Input type="text" required id="title" autoComplete="off" value={taskInfo.title}  />
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="description">Description:</Label>
+                            <Textarea rows="3" type="text"  id="title" autoComplete="off" value={taskInfo.description} />
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="Notes">Notes:</Label>
+                            <Textarea rows="3" type="text"  id="title" autoComplete="off" value={taskInfo.notes}/>
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="status">Status:</Label>
+                            <Select value={taskInfo.status} >
+                                <option value="">{taskInfo.status}</option>
+
+                            </Select>
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="priority">Priority:</Label>
+                            <Select value={taskInfo.priority}>
+                                <option value="">{taskInfo.priority}</option>
+
+                            </Select>
+                        </FormField>
+
                         <div className="FormButtons">
-                            <Button><FaRegEdit/></Button>
-                            <Button><FaRegTrashAlt/></Button>
+                            <button><FaRegEdit/></button>
+                            <button><FaRegTrashAlt/></button>
                         </div>
                     </div>
                 :   <div className="TaskInfo">
                         <h1>Select A Task</h1>
                     </div>
             }
+            </div>
 
+            <div className="DisplayInfo">
             {subtaskInfo.status !== 500 ?
                     <div className="SubtaskInfo">
-                    <h1>{subtaskInfo.title}</h1>
-                        <div>
-                            <h2>Description: </h2>
-                            <h4>{subtaskInfo.description}</h4>
-                            <h2>Notes: </h2>
-                            <h4>{subtaskInfo.notes}</h4>
-                            <h2>Status: </h2>
-                            <h4>{subtaskInfo.status}</h4>
-                            <h2>Priority: </h2>
-                            <h4>{subtaskInfo.priority}</h4>
-                        </div>
+                        <h1>Sub-Task</h1>
+                        <FormField>
+                            <Label htmlFor="title">Title:</Label>
+                            <Input type="text" required id="title" autoComplete="off" value={subtaskInfo.title}  />
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="description">Description:</Label>
+                            <Textarea rows="3" type="text"  id="title" autoComplete="off" value={subtaskInfo.description} />
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="Notes">Notes:</Label>
+                            <Textarea rows="3" type="text"  id="title" autoComplete="off" value={subtaskInfo.notes}/>
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="status">Status:</Label>
+                            <Select value={subtaskInfo.status} >
+                                <option value="">{subtaskInfo.status}</option>
+                            </Select>
+                        </FormField>
+
+                        <FormField>
+                            <Label htmlFor="priority">Priority:</Label>
+                            <Select value={subtaskInfo.priority}>
+                                <option value="">{subtaskInfo.priority}</option>
+                            </Select>
+                        </FormField>
+
                         <div className="FormButtons">
-                            <Button><FaRegEdit/></Button>
-                            <Button><FaRegTrashAlt/></Button>
+                            <button><FaRegEdit/></button>
+                            <button><FaRegTrashAlt/></button>
                         </div>
                     </div>
                 :   <div className="SubtaskInfo">
-                        <h1>Select A Subtask</h1>
+                        <h1>Select A Sub-Task</h1>
                     </div>
             }
-        </div>
+            </div>
         </>
     )
 }

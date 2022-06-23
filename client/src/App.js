@@ -19,7 +19,9 @@ function App() {
   const [task, setTask] = useState(0);
   const [subtasks, setSubtasks] = useState([]);
   const [subtask, setSubtask] = useState(0);
-
+  const [projectInfo, setProjectInfo] = useState([])
+  const [taskInfo, setTaskInfo] = useState([])
+  const [subtaskInfo, setSubtaskInfo] = useState([])
 
   useEffect(() => {
     // auto-login
@@ -53,10 +55,13 @@ function App() {
         setSubtasks={setSubtasks}
         subtask={subtask}
         setSubtask={setSubtask}
+        projectInfo={projectInfo}
+        taskInfo={taskInfo}
+        subtaskInfo={subtaskInfo}
+        setProjectInfo={setProjectInfo}
+        setTaskInfo={setTaskInfo}
+        setSubtaskInfo={setSubtaskInfo}
         />} />
-        {/* <Route path="/edit-project" element={<ProjectForm project={project}/>}/>
-        <Route path="/edit-task/" element={<TaskForm task={task}/>}/>
-        <Route path="/edit-subtask/" element={<SubtaskForm subtask={subtask}/>}/> */}
         <Route path="/new-project" element={<ProjectForm user={user} setProjects={setProjects}/>}/>
         <Route path="/new-task" element={<TaskForm project={project} setTasks={setTasks}/>}/>
         <Route path="/new-subtask" element={<SubtaskForm project={project} task={task} setSubtasks={setSubtasks}/>}/>
